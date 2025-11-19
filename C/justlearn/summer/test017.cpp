@@ -1,0 +1,24 @@
+#include<stdio.h>
+main()
+{
+	int a,b,c=0,d,e,flag;
+	scanf("%d",&a);
+	for(b=2;b<=a;b++)
+	{
+		for(d=2;d<b;d++)
+		{flag=0;
+		if(b%d==0)
+		{
+		flag=1;
+		break;
+		}
+		}
+		if(flag==0)
+		{
+			c+=1; 
+		printf("%6d",b);
+		}
+		if(c%10==0&&flag==0)
+		printf("\n");
+	}
+}

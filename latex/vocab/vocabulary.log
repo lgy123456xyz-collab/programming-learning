@@ -1,0 +1,2403 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.17)  6 NOV 2025 14:29
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**e:/programming_works/latex/vocab/vocabulary.tex
+(e:/programming_works/latex/vocab/vocabulary.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
+File: ctexbackend.cfg 2022/07/14 v2.5.10 Backend configuration file (CTEX)
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count196
+\l__pdf_internal_box=\box52
+))
+Document Class: ctexart 2022/07/14 v2.5.10 Chinese adapter for class article (CTEX)
+(f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2022/07/14 v2.5.10 Patching commands (CTEX)
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\l__ctex_tmp_int=\count197
+\l__ctex_tmp_box=\box53
+\l__ctex_tmp_dim=\dimen141
+\g__ctex_section_depth_int=\count198
+\g__ctex_font_size_int=\count199
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2022/07/14 v2.5.10 Option configuration file (CTEX)
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count266
+\c@section=\count267
+\c@subsection=\count268
+\c@subsubsection=\count269
+\c@paragraph=\count270
+\c@subparagraph=\count271
+\c@figure=\count272
+\c@table=\count273
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen142
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/engine/ctex-engine-pdftex.def
+File: ctex-engine-pdftex.def 2022/07/14 v2.5.10 (pdf)LaTeX adapter (CTEX)
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
+Package: CJKutf8 2021/10/16 4.8.5
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2021/10/16 4.8.5
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2021/10/16 4.8.5
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2021/10/16 4.8.5
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+\CJK@indent=\box54
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/cjkpunct/CJKpunct.sty
+Package: CJKpunct 2016/05/14 4.8.4
+\CJKpunct@cnta=\count274
+\CJKpunct@cntb=\count275
+\CJKpunct@cntc=\count276
+\CJKpunct@cntd=\count277
+\CJKpunct@cnte=\count278
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2026 (decimal 8230)
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/cjkpunct/CJKpunct.spa)) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/cjk/texinput/CJKspace.sty
+Package: CJKspace 2021/10/16 3.8.0
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+File: UTF8.bdg 2021/10/16 4.8.5
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/ctexspa.def
+File: ctexspa.def 2022/07/14 v2.5.10 Space info for CJKpunct (CTEX)
+)
+\ccwd=\dimen143
+\l__ctex_ccglue_skip=\skip51
+)
+\l__ctex_ziju_dim=\dimen144
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+Package: zhnumber 2022/07/14 v3.0 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count279
+\l__zhnum_tmp_int=\count280
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+File: zhnumber-utf8.cfg 2022/07/14 v3.0 Chinese numerals with UTF8 encoding
+))
+\l__ctex_heading_skip=\skip52
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def
+File: ctex-scheme-chinese-article.def 2022/07/14 v2.5.10 Chinese scheme for article (CTEX)
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
+)) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+File: ctex-c5size.clo 2022/07/14 v2.5.10 c5size option (CTEX)
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
+File: ctex-fontset-windows.def 2022/07/14 v2.5.10 Windows fonts definition (CTEX)
+)) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count281
+\Gm@cntv=\count282
+\c@Gm@tempcnt=\count283
+\Gm@bindingoffset=\dimen145
+\Gm@wd@mp=\dimen146
+\Gm@odd@mp=\dimen147
+\Gm@even@mp=\dimen148
+\Gm@layoutwidth=\dimen149
+\Gm@layoutheight=\dimen150
+\Gm@layouthoffset=\dimen151
+\Gm@layoutvoffset=\dimen152
+\Gm@dimlist=\toks20
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+Now handling font encoding T3 ...
+... no UTF-8 mapping file for font encoding T3
+))) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+) (./vocabulary.aux)
+\openout1 = `vocabulary.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 7.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 7.
+ (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 7.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+e:/programming_works/latex/vocab/vocabulary.tex:9: Missing $ inserted.
+<inserted text> 
+                $
+l.9 hardcore /_
+               hɑːdˌkɔː_/ a.狂热的 硬核的
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.53937> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 9.
+LaTeX Font Info:    Trying to load font information for C70+rm on input line 9.
+(f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/fd/c70rm.fd
+File: c70rm.fd 2022/07/14 v2.5.10 Chinese font definition (CTEX)
+)
+
+LaTeX Warning: Command \ae invalid in math mode on input line 16.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 16.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:16: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 plank /_plæŋ
+                   k_/ n.木板
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 18.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 22.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 22.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:22: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 mangrove /_mæŋ
+                     ɡrəʊv_/ n.红树林
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 27.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 32.
+
+e:/programming_works/latex/vocab/vocabulary.tex:34: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.34 andesite /_æ
+                  ndɪˌsaɪt_/ n.安山岩
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 34.
+
+
+LaTeX Warning: Command \dh invalid in math mode on input line 37.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:37: LaTeX Error: Command \dh unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 nether /_neð
+                  ə_/ a.下面的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 38.
+
+e:/programming_works/latex/vocab/vocabulary.tex:40: Missing { inserted.
+<to be read again> 
+                   ^
+l.40 purpure /_'
+                pəpjʊə_/ a.紫色的
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 42.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 42.
+
+e:/programming_works/latex/vocab/vocabulary.tex:44: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.44 amethyst /_æ
+                  məθɪst_/ n.紫水晶
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 51.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 54.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 55.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 57.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 60.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 60.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:60: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 sapling /_sæplɪŋ
+                        _/ n.幼树
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+e:/programming_works/latex/vocab/vocabulary.tex:66: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.66 allium /_æ
+                liəm_/ n.葱属植物
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 66.
+
+e:/programming_works/latex/vocab/vocabulary.tex:67: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.67 azure /_æ
+               ʒə_/ a.天蓝色的
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 67.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 76.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 86.
+
+e:/programming_works/latex/vocab/vocabulary.tex:93: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.93 anvil /_æ
+               nvɪl_/ n.铁砧
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 93.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 98.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:98: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 enchanting /_ɪnˈtʃɑːntɪŋ
+                                    _/ a.迷人的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 99.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 103.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 106.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 107.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 109.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 110.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 126.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:126: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 linger /_lɪŋ
+                    ɡə_/  v.缓慢消失The faint smell of her perfume lin...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 127.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 129.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:129: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 ingot /_ɪŋ
+                  ɡət_/ n.锭
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 131.
+
+e:/programming_works/latex/vocab/vocabulary.tex:137: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.137 angler /_æ
+                 ŋɡlə_/ n.垂钓者
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 137.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 137.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:137: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 angler /_æŋ
+                   ɡlə_/ n.垂钓者
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+e:/programming_works/latex/vocab/vocabulary.tex:149: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.149 aqua /_æ
+               kwə_/ n.湖绿色 (pl.aquas) 水 (pl.aquae)
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 149.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 151.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:151: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 budding /_bʌdɪŋ
+                        _/ v.开始发展的 发芽的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 162.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:162: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162 donkey /_dɒŋ
+                    ki_/ n.驴
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 179.
+
+LaTeX Warning: Command \ng invalid in math mode on input line 197.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:197: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 boring /_ˈbɔːrɪŋ
+                           _/ a.无聊的 令人生厌的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+e:/programming_works/latex/vocab/vocabulary.tex:203: Missing { inserted.
+<to be read again> 
+                   ^
+l.203 tantrum /_'
+                  tæntrəm_/ n.耍脾气
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 203.
+
+e:/programming_works/latex/vocab/vocabulary.tex:206: Missing { inserted.
+<to be read again> 
+                   ^
+l.206 cereal /_'
+                 sɪrɪəl_/ n.麦片
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+e:/programming_works/latex/vocab/vocabulary.tex:208: Missing { inserted.
+<to be read again> 
+                   ^
+l.208 chortle /_'
+                  tʃɔrtl_/ v.哈哈大笑
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 212.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 223.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:223: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 steering /_ˈstɪərɪŋ
+                              _/ n.驾驶装置 steering wheel 方向盘
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+e:/programming_works/latex/vocab/vocabulary.tex:224: Missing { inserted.
+<to be read again> 
+                   ^
+l.224 weirdo /_'
+                wɪədəʊ_/ n.古怪的人 
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+e:/programming_works/latex/vocab/vocabulary.tex:226: Missing { inserted.
+<to be read again> 
+                   ^
+l.226 emerald /_'
+                 emərəld_/ a.翠绿色的 n.翡翠
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 242.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 243.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 262.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 263.
+
+e:/programming_works/latex/vocab/vocabulary.tex:285: Missing { inserted.
+<to be read again> 
+                   ^
+l.285 stiff /_'
+               stɪf_/ a.硬的 僵硬的(肌肉) 稠的 艰难的 不友好...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 320.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 348.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 356.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:356: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.356 piercing /_ˈpɪəsɪŋ
+                             _/ a.锐利的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 362.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 367.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:367: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 astounding /_əˈstaʊndɪŋ
+                                  _/ a.令人震惊的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 379.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:379: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.379 rumbling /_ˈrʌmblɪŋ
+                             _/ n.低沉而持续的声音
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 385.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 385.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:385: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.385 tangle /_ˈtæŋ
+                      ɡl_/ v.缠绕在一起 n.缠绕的一团 混乱His fi...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 390.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:390: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.390 swarming /_ˈswɔːmɪŋ
+                              _/ n.蜂拥
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 392.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 397.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 398.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 399.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 417.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:417: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417 swing /_swɪŋ
+                    _/ v.摆动 纵身跃向 转弯 转身 改变(意见 情...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 420.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:420: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.420 slink /_slɪŋ
+                    k_/ v.溜走
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 434.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 435.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 456.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 468.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:468: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.468 fling /_flɪŋ
+                    _/ v.扔 fling one's arms around sb. 把...搂入怀中
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 471.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 479.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 481.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:481: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.481 revolting /_rɪˈvəʊltɪŋ
+                                  _/ a.令人厌恶的 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 486.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 486.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:486: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.486 gang /_ɡæŋ
+                   _/ n.团伙 gang rape n.轮奸 gang bang n.轮奸
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 490.
+
+
+LaTeX Warning: Command \dh invalid in math mode on input line 511.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:511: LaTeX Error: Command \dh unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.511 slither /_ˈslɪð
+                         ə(r)_/ v.滑行(蛇)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 514.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 515.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 515.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 519.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 528.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:528: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.528 wink /_wɪŋ
+                  k_/ v.眨眼
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 533.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 546.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 547.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 553.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:553: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.553 stuffing /_ˈstʌfɪŋ
+                            _/ n.填充物 v.填充
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 563.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 566.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:566: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.566 sink /_sɪŋ
+                  k_/ n.洗碗槽 v.下降 下沉
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 568.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:568: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.568 wrinkle /_ˈrɪŋ
+                       kl_/ v.皱眉 n.皱纹
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 569.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 569.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:569: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.569 bang /_bæŋ
+                  _/ v.猛敲 把...砰地关上 砰地一扔 碰撞  (男�...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 571.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 574.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 574.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:574: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.574 twang /_twæŋ
+                    _/ v.发出拨弦声
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 575.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 584.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 592.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 592.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:592: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.592 dangle /_dæŋ
+                    ɡl_/ v.悬挂
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 599.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 602.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 602.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:602: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.602 strangle /_stræŋ
+                        ɡl_/ v.勒死
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 609.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 616.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 630.
+
+e:/programming_works/latex/vocab/vocabulary.tex:633: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.633 amble /_æ
+                mbl_/ v.缓行
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 633.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 636.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 643.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 653.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 658.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 658.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:658: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.658 upstanding /_ˌʌpˈstændɪŋ
+                                    _/ a.正直的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 661.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 668.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:668: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.668 crinkle /_krɪŋ
+                      kl_/ v.起皱纹 n.褶皱 crinkle one's eyes 眯起眼睛
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 677.
+
+e:/programming_works/latex/vocab/vocabulary.tex:679: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.679 amber /_æ
+                mbə_/ n.琥珀色 n.琥珀
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 679.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 695.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:695: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.695 thumping /_θʌmpɪŋ
+                           _/ a.巨大的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 702.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 703.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 703.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:703: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.703 galloping /_ɡæləpɪŋ
+                              _/ a.飞奔的 迅速增加的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 707.
+
+e:/programming_works/latex/vocab/vocabulary.tex:709: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.709 ashen /_æ
+                ʃn_/ a.面色苍白的
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 709.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 711.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 714.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 721.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 723.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:723: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.723 blinding /_blaɪndɪŋ
+                            _/ a.刺眼的 绝妙的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 731.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 736.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 747.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 750.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 753.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 754.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 760.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:760: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.760 puncture /_ˈpʌŋ
+                        ktʃə(r)_/ n.小孔 v,刺穿
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 766.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 772.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:772: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.772 gringo /_ˈɡrɪŋ
+                        ɡəʊ_/ n.美国佬(在拉丁美洲国家使用)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 783.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:783: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.783 bungler /_bʌŋ
+                     ɡlə(r)_/ n.笨手笨脚的人
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 784.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:784: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.784 bungle /_ˈbʌŋ
+                      ɡl_/ v.笨拙地做 失败 n.失误
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 786.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 793.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 794.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:794: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.794 fungus /_ˈfʌŋ
+                      ɡəs_/ n.真菌 pl.fungi /_ˈfʌŋgaɪ_/
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 794.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:794: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.794 ...�fʌŋɡəs_/ n.真菌 pl.fungi /_ˈfʌŋ
+                                                  gaɪ_/
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \dh invalid in math mode on input line 797.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:797: LaTeX Error: Command \dh unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.797 seethe /_siːð
+                     _/ v.(液体)翻滚 生闷气 充满(人等)~with
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 801.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:801: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.801 bustling /_ˈbʌslɪŋ
+                            _/ a.熙熙攘攘的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 811.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:811: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.811 beaming /_ˈbiːmɪŋ
+                           _/ a.愉快的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 815.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 816.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 819.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 822.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:822: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.822 stirring /_ˈstɜːrɪŋ
+                              _/ a.激动人心的 n.萌动 出现
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 823.
+
+
+LaTeX Warning: Command \dh invalid in math mode on input line 837.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:837: LaTeX Error: Command \dh unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.837 swarthy /_ˈswɔːð
+                          i_/ a.黝黑的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 846.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:846: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.846 wring /_rɪŋ
+                   _/ v.拧
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 850.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:850: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.850 pinky /_pɪŋ
+                   ki_/ n.小指=litter finger
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 872.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 873.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 876.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 878.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 879.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 881.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 882.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 883.
+
+
+LaTeX Warning: Command \dh invalid in math mode on input line 884.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:884: LaTeX Error: Command \dh unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.884 withdrawn /_wɪð
+                       ˈdrɔːn_/ a.内向的 沉默寡言的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 895.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 934.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 947.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 948.
+
+e:/programming_works/latex/vocab/vocabulary.tex:964: Missing { inserted.
+<to be read again> 
+                   ^
+l.964 semipermanent /_'
+                       semɪ'pɜ:mənənt_/ a.暂时的
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 968.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:968: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.968 hawking /_ˈhɔːkɪŋ
+                            _/ n.鹰猎
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 970.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 977.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 978.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 991.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:991: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.991 breeding /_ˈbriːdɪŋ
+                             _/ n.生育
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 992.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:992: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.992 concrete /_ˈkɒŋ
+                        kriːt_/ a.具体的 n.混凝土
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 994.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:994: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.994 gearing /_ˈɡɪərɪŋ
+                             _/ n.传动装置
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1011.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1011.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1011: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1011 spank /_spæŋ
+                     k_/ v.打(小孩的)屁股
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1012.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1012.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1012: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1012 spanking /_ˈspæŋ
+                          kɪŋ_/ a.飞快地
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1012.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1012: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1012 spanking /_ˈspæŋkɪŋ
+                               _/ a.飞快地
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1018.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1021.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1028.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1029.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1042.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1042: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1042 prolong /_prəˈlɒŋ
+                            _/ v.延长
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1049.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1062.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1086.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1090.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1105.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1105: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1105 shilling /_ˈʃɪlɪŋ
+                             _/ n.先令
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1111.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1111.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1111: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1111 racking /_ˈrækɪŋ
+                           _/ a.痛苦的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1113.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1113: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1113 functional /_ˈfʌŋ
+                           kʃənl_/ a.实用的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1137.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1142.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1142: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1142 cling /_klɪŋ
+                     _/ v.紧握survivors clinging to a raft 附着The wet s...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1143.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1143.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1147.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1147: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1147 inviting /_ɪnˈvaɪtɪŋ
+                                _/ a.诱人的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1149.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1151.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1155.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1161.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1162.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1162: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1162 tingle /_ˈtɪŋ
+                       ɡl_/ v.感到刺痛 强烈地感到 ~with sth n.刺�...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1166.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1169.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1180.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1191.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1197.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1197.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1197: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1197 sanguine /_ˈsæŋ
+                         ɡwɪn_/ a.乐观的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1202.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1202: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1202 extinguisher /_ɪkˈstɪŋ
+                                 ɡwɪʃə(r)_/ n.灭火器
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1206.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1229.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1237.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1237: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1237 bearing /_ˈbeərɪŋ
+                            _/ n.关系 影响 举止 轴承
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1245.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1246.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1247.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1247.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1249.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1250.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1253.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1255.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1271.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1271: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1271 rustling /_ˈrʌslɪŋ
+                             _/ n.沙沙声 偷窃牲口
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1276.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1291.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1298.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1298: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1298 honk /_hɒŋ
+                   k_/ v.(汽车)鸣笛 鹅叫 n.鹅叫声 汽车喇叭声
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1314.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1321.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1322.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1326.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1341.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1348.
+
+
+LaTeX Warning: Command \dh invalid in math mode on input line 1350.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1350: LaTeX Error: Command \dh unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1350 smother /_ˈsmʌð
+                         ə(r)_/ v.闷死 He smothered the baby with a pillo...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1356.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1359.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1360.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1375.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1385.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1385.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1386.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1386.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1388.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1389.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1390.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1392.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1394.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1396.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1396.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1400.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1406.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1413.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1414.
+
+
+LaTeX Warning: Command \dh invalid in math mode on input line 1417.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1417: LaTeX Error: Command \dh unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1417 bathe /_beɪð
+                     _/ v.洗澡 沐浴(在阳光里)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1418.
+
+
+LaTeX Warning: Command \dh invalid in math mode on input line 1423.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1423: LaTeX Error: Command \dh unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1423 breathe /_briːð
+                        _/ v.呼吸
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1429.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1430.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1432.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1433.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1434.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1436.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1437.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1453.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1471.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1471: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1471 folding /_ˈfəʊldɪŋ
+                              _/ a.可折叠的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1474.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1474: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1474 blink /_blɪŋ
+                     k_/ v.眨眼
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1475.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1475: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1475 blinking /_ˈblɪŋ
+                          kɪŋ_/ a.该死的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1475.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1475: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1475 blinking /_ˈblɪŋkɪŋ
+                               _/ a.该死的
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1480.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1491.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1492.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1492.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1492: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1492 franc /_fræŋ
+                     k_/ n.法郎
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1493.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1493.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1493: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1493 frank /_fræŋ
+                     k_/ a.坦率地 to the frank with you
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1496.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1496: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1496 freezing /_ˈfriːzɪŋ
+                              _/ a.极冷的 n.冰点
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ng invalid in math mode on input line 1513.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1513: LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1513 function /_ˈfʌŋ
+                         kʃn_/ n.功能 函数 社交聚会 v.起作用
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 1520.
+
+
+LaTeX Warning: Command \dh invalid in math mode on input line 1520.
+
+
+e:/programming_works/latex/vocab/vocabulary.tex:1520: LaTeX Error: Command \dh unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1520 gather /_ˈɡæð
+                        ə(r)_/ v.使聚集 采集 增加
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 8360 strings out of 473190
+ 162026 string characters out of 5711643
+ 849707 words of memory out of 5000000
+ 31393 multiletter control sequences out of 15000+600000
+ 585966 words of font info for 132 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 80i,26n,83p,749b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+e:/programming_works/latex/vocab/vocabulary.tex:1520:  ==> Fatal error occurred, no output PDF file produced!

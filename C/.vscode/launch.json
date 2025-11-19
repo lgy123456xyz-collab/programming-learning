@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug C Program",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "e:/C_2025_07/output/test019.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "e:/C_2025_07",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:/soft/MinGW/bin/gdb.exe",
+            "preLaunchTask": "build C program"
+        }
+    ]
+}

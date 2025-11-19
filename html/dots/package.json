@@ -1,0 +1,12 @@
+{
+  "name": "levitacao-codigo",
+  "version": "1.0.0",
+  "description": "Interactive text animation",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server -o"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

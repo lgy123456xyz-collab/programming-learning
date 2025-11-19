@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全功能桥牌中心 - 桥牌分值求解器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="showSection('leaderboard')">🏆 排行榜</button>
+            <button onclick="showSection('calculator')">🧮 算分工具</button>
+            <button onclick="showSection('solver')">🔍 双明手求解</button>
+            <button onclick="showSection('bidding')">💬 叫牌提示</button>
+            <button onclick="showSection('ocr')">📸 牌例识别</button>
+            <button id="auth-btn" onclick="showSection('login')">👤 登录/注册</button>
+            <button id="admin-btn" style="display:none;" onclick="showSection('admin')">🔑 管理员统计</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="leaderboard" class="content-section active">
+            <h2>🏆 排行榜</h2>
+            <p>（此数据需后端提供，此处为模拟数据）</p>
+            <table id="rank-table">
+                <thead><tr><th>ID</th><th>胜</th><th>平</th><th>负</th><th>积分</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div id="calculator" class="content-section">
+            <div class="score-calculator-container">
+                <h2>🧮 桥牌分值计算器</h2>
+                
+                <div class="input-group">
+                    <label for="contract-level">定约级数 (1-7):</label>
+                    <input type="number" id="contract-level" min="1" max="7" value="4">
+                </div>
+                <div class="input-group">
+                    <label for="contract-suit">定约花色:</label>
+                    <select id="contract-suit">
+                        <option value="C">♣ (草花)</option>
+                        <option value="D">♦ (方片)</option>
+                        <option value="H">♥ (红心)</option>
+                        <option value="S">♠ (黑桃)</option>
+                        <option value="NT">NT (无将)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="double">加倍/再加倍:</label>
+                    <select id="double">
+                        <option value="None">无</option>
+                        <option value="X">X (加倍)</option>
+                        <option value="XX">XX (再加倍)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="vulnerability">局况:</label>
+                    <select id="vulnerability">
+                        <option value="None">双方无局</option>
+                        <option value="NS">南北有局</option>
+                        <option value="EW">东西有局</option>
+                        <option value="Both">双方有局</select>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="tricks-made">实际赢墩数 (0-13):</label>
+                    <input type="number" id="tricks-made" min="0" max="13" value="10">
+                </div>
+                
+                <hr>
+
+                <h4>IMP 比较基准</h4>
+                <div class="input-group">
+                    <label for="opponent-score">对手得分 (基准分):</label>
+                    <input type="number" id="opponent-score" value="420">
+                </div>
+
+                <button onclick="calculateFullScore()">计算定约分和 IMP</button>
+
+                <div class="result-area">
+                    <p id="contract-summary">定约: -</p>
+                    <p id="result-text">总分: <strong>0</strong></p>
+                    <p id="bonus-text">奖分详情: (定约墩分: 0 | 奖励分: 0)</p>
+                    <hr>
+                    <p id="imp-result">IMP: <strong>0</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="solver" class="content-section">
+            <h2>🔍 双明手求解器</h2>
+            <p>（此功能需连接后端AI服务）</p>
+            <label for="solver-input">输入四手牌例（N-E-S-W，例如：S:AKQJ.H:T98...）:</label>
+            <textarea id="solver-input" rows="5" placeholder="输入牌例"></textarea>
+            <button onclick="solveDoubleDummy()">获取最佳打法和定约</button>
+            <div id="solver-result" class="result-area"></div>
+        </div>
+        
+        <div id="bidding" class="content-section">
+            <h2>💬 叫牌提示（二盖一体系）</h2>
+            <p>（此功能需连接后端AI服务）</p>
+            <div id="bidding-history-display">当前叫牌历史: </div>
+            <input type="text" id="next-bid-input" placeholder="输入下一叫品 (如1S, 2NT, P)">
+            <button onclick="submitBid()">提交叫品并获取建议</button>
+            <div id="bidding-suggestion" class="result-area"></div>
+        </div>
+        
+        <div id="ocr" class="content-section">
+            <h2>📸 牌例 OCR 识别</h2>
+            <p>（此功能需连接后端OCR服务）</p>
+            <input type="file" id="ocr-upload" accept="image/*">
+            <button onclick="uploadForOCR()">上传并识别</button>
+            <div id="ocr-result" class="result-area">识别出的牌例: </div>
+        </div>
+
+        <div id="login" class="content-section">
+            <h2>👤 用户认证</h2>
+            <div id="login-form">
+                <input type="text" id="login-username" placeholder="用户名">
+                <input type="password" id="login-password" placeholder="密码">
+                <button onclick="handleLogin()">登录</button>
+                <button onclick="handleRegister()">注册</button>
+            </div>
+        </div>
+
+        <div id="admin" class="content-section admin-only">
+            <h2>🔑 管理员成绩统计</h2>
+            <p>（此功能仅对管理员可见，需后端权限验证）</p>
+            <h3>输入记录管理</h3>
+            <div id="admin-records-list">
+                <p>记录ID 1: UserA, 4S+1, Score: 450. [<a href="#" onclick="editRecord(1)">修改</a>] [<a href="#" onclick="deleteRecord(1)">删除</a>]</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
