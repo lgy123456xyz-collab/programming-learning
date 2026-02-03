@@ -1,0 +1,25 @@
+# --- 1. 全局忽略规则 ---
+*.exe
+*.idea/
+.vscode/
+CMakeLists.txt
+
+# --- 2. 针对特定路径的忽略 ---
+# Java 相关
+/java/.metadata/
+
+# angel 文件夹
+/angel/output/
+
+# RandomNumber 文件夹：忽略所有，仅保留 main.py
+/Python/RandomNumber/*
+!/Python/RandomNumber/main.py
+
+# --- 3. LaTeX 文件夹规则：只保留 .tex 文件 ---
+# 先忽略 latex 文件夹下的所有内容
+/latex/*
+# 排除所有 .tex 文件（即不忽略它们）
+!/latex/*.tex
+# 如果 latex 文件夹内有子文件夹也需要保留里面的 .tex，则改写为：
+# !/latex/**/
+# !/latex/**/*.tex
