@@ -1,0 +1,24 @@
+// --- 测试样例 (可选，如果需要在浏览器控制台运行) ---
+/*
+function runJsTests() {
+    const calc = calculateBridgeScore;
+    console.log("E-W vul, 3NT= by W:", calc("NT", 3, "W", "", "E-W", "=")); // -400 (3NT=, W有局, 成局分)
+    console.log("none vul, 1Cx-2:", calc("C", 1, "S", "x", "none", -2)); // -300 (1C-2, S无局被加倍宕2)
+    console.log("both vul, 4Hxx+1:", calc("H", 4, "E", "xx", "both", "+1")); // -1310 (4Hxx+1, E有局, 成局1050+超墩2*400-100(完成奖) + 100(再加倍完成奖) = 1310) -> 南北: -1310
+    console.log("N-S vul, 5Dx=:", calc("D", 5, "N", "x", "N-S", "=")); // 750 (5D x=, N有局, 成局500+定约200+50(加倍完成) = 750)
+    console.log("none vul, 7NTxx-1:", calc("NT", 7, "S", "xx", "none", -1)); // -400 (7NTxx-1, S无局, 宕1再加倍)
+    console.log("E-W vul, 2S= by E:", calc("S", 2, "E", "", "E-W", "=")); // -110 (2S=, E有局, 未成局30*2+50=110) -> 南北: -110
+    console.log("both vul, 3NTx+3:", calc("NT", 3, "W", "x", "both", "+3")); // -1090 (3NTx+3, W有局, 成局700+完成50+超3*200 = 1350) -> 南北: -1350, 原始代码是-1090, 原始代码逻辑与标准略有差异
+    console.log("none vul, 1N=:", calc("NT", 1, "N", "", "none", "=")); // 90 (1NT=, N无局, 40+50=90)
+    console.log("N-S vul, 6Hxx=:", calc("H", 6, "S", "xx", "N-S", "=")); // 2530 (6Hxx=, S有局, 满贯2250+定约360+完成100+50(定约额外) = 2760) -> 原始代码是2530, 原始代码逻辑与标准略有差异
+    console.log("both vul, 7Cx-7:", calc("C", 7, "W", "x", "both", -7)); // -1100 (7C-7, W有局被加倍) -> 南北: 1100
+    
+    console.log("both vul, 6Sx-1:", calc("S", 6, "N", "x", "both", -1)); // -200 (6Sx-1, N有局被加倍宕1)
+    console.log("none vul, 6Sx+2:", calc("S", 6, "N", "x", "none", +2)); // 1490 (6Sx+2, N无局, 满贯1250+定约360+超2*100+50(加倍完成) = 1860) -> 原始代码是1490, 原始代码逻辑与标准略有差异
+    console.log("none vul, 6Sx+1:", calc("S", 6, "N", "x", "none", +1)); // 1390 (6Sx+1, N无局) -> 原始代码是1390
+    console.log("N-S vul, 2Hx=:", calc("H", 2, "N", "x", "N-S", "=")); // 190 (2H x=, N有局, 120+50+20(完成)=190)
+    console.log("both vul, 6Sx+1:", calc("S", 6, "N", "x", "both", "+1")); // 2040 (6Sx+1, N有局, 满贯2550+定约360+超1*200+50(加倍完成) = 3160) -> 原始代码是2040, 原始代码逻辑与标准略有差异
+}
+
+// runJsTests(); 
+*/

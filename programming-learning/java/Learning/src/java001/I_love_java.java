@@ -1,0 +1,8 @@
+package java001;
+
+public class I_love_java {
+	public static void main(String args[]) {
+		System.out.println("我喜欢学习Java")
+		sysout
+	}
+}

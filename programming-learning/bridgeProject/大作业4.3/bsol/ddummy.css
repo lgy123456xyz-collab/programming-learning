@@ -1,0 +1,267 @@
+/* CSS Document */
+html {margin:0px; padding:0px; overflow-y:scroll;}
+body {
+      margin:0px;
+	  padding:0px;
+	  margin-top:0px;
+	  margin-left:0px;
+	  margin-bottom:0px;
+      background-color : #DDFFDD;
+      font-family : Verdana, Arial, Helvetica, sans-serif;
+      font-size : 14px;}
+
+.common {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #000000;
+}
+
+.sub-title {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: black;
+        text-align:center;
+}
+
+.title-bar {
+        font-family:  Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+        text-align:center;
+	color: white;
+        background-color: red; 
+        line-height: 20px;  
+}
+
+.month-heading {
+           font-family: Verdana, Arial, Helvetica, sans-serif;
+           font-weight: bold;
+	   color: blue;   
+	   font-size:16px;
+	   text-align: left; 
+           background-color:#7FFFD4; 
+}
+
+.blue-bar {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: white; 
+        text-align:center;
+        background-color:blue; 
+        line-height: 18px;  
+}
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+input[type=radio] {
+    margin:10px;
+}
+ 
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input[type=radio] + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 12px;
+    background-color: #ffffff;
+    border:1px solid black;
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=radio]:checked + label { 
+   background-image: none;
+   background-color:#888888;
+   color:white;
+}
+
+td, div {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	color: #000000;
+}
+
+div.toppadding {
+    height: 18px;
+    overflow: auto;
+}
+H1 {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+	color: blue;  
+   line-height: 28px;  
+}
+H2 {
+   font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: black;   
+}
+H3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	color: black;
+}
+
+.myLink {
+	cursor: pointer;
+	font-weight: normal;
+	color: #000099;
+}
+
+a { font-weight: bold;}
+a:link { color: blue; text-decoration:none }
+a:visited { color: blue; text-decoration:none }
+a:active { color: blue; text-decoration:none }
+a:hover { color: red; text-decoration:none }
+
+p { margin: 0px; }
+
+table.results H1{text-align:center;font-family:Tahoma, Verdana, Arial, sans-serif;font-weight:bold;font-size:18pt;color:blue;}
+table.results H2 {text-align:center;font-weight:bold; background-color:red;font-family:Arial, Helvetica, sans-serif;line-height: 16pt;color:white}
+table.results {font-size:16pt; border:0px; border-collapse:collapse; border-spacing:0px; padding:2px; background-color:white; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:normal;}
+table.results th {font-size:10pt;border:2px ridge; color:white;font-style : italic;}
+table.results td {border:0px solid #DDD;padding-left:4px;padding-right:4px;padding-top:1px;padding-bottom:1px;white-space: nowrap;font-size:14px; }
+
+.results_subheading {text-align:center;font-family:Tahoma, Verdana, Arial, sans-serif;font-weight:bold;font-size:18pt;color:white;border:2px ridge;font-style:italic;}
+
+.results_tr_grey {background-color:#EEEEFF; border:0px solid #DDD;padding:2px;white-space: nowrap;font-size:14px;}
+
+table.ranking {font-size:14pt; border:1px solid black; border-collapse:collapse; border-spacing:0px; padding:2px; color:black; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:normal;}
+table.ranking th {font-size:9pt;border:2px ridge; padding-right:4px; padding-left:4px; color:white;font-style : normal;background-color:#6699FF;}
+table.ranking td {border:0px solid #DDD;padding-left:4px;padding-right:4px;padding-top:1px;padding-bottom:1px;white-space: nowrap;font-size:12px;}
+
+.traveller_tr_alt {background-color:#EEEEEE; border:0px solid #DDD;padding:2px;white-space: nowrap;font-size:14px;}
+
+table.traveller H1{text-align:center;font-family:Tahoma, Verdana, Arial, sans-serif;font-weight:bold;font-size:18pt;color:blue;}
+table.traveller H2 {text-align:center;font-weight:bold; background-color:red;font-family:Arial, Helvetica, sans-serif;line-height: 16pt;color:white}
+table.traveller {font-size:16pt; border:0px ; border-collapse:collapse; border-spacing:0px; padding:2px; background-color:white; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:normal;}
+table.traveller th {font-size:10pt;border:2px ridge;color:white;font-style : italic;}
+table.traveller td {border:0px solid #DDD;padding:2px;white-space: nowrap;font-size:14px; }
+
+table.travheader {font-size:16pt; border:0px ; border-collapse:collapse; border-spacing:0px; padding:2px; background-color:white; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:normal;}
+table.travheader th {font-size:10pt;border:0px; color:white;font-style : italic;}
+table.travheader td {border:0px;padding:0px;white-space: nowrap;font-size:14px; }
+
+P.Credit {text-align:left;font-family:Times New Roman;font-weight:normal;font-size:8pt}
+
+table.mc {width: 100%;border-width:thin;text-align:center;padding:0; font-family:Tahoma, Verdana, Arial, sans-serif;}
+table.mc tr td {border:0px solid #DDD;padding:0px;white-space: nowrap; font-size:18px;}
+
+table.mc_large {width: 100%;border-width:thin;text-align:center;padding:0; font-family:Tahoma, Verdana, Arial, sans-serif;}
+table.mc_large tr td {border:0px solid #DDD;padding:0px;white-space: nowrap; font-size:20px;}
+
+table.mc_small {width: 100%;border-width:thin;text-align:center;padding:0; font-family:Tahoma, Verdana, Arial, sans-serif; font-size:12px;}
+table.mc_small tr td {border:0px solid #DDD;padding:0px;white-space: nowrap; font-size:12px;}
+
+table.bidding {width: 100%;border-width:thin;text-align:center;padding:0; border-spacing:0px; font-family:Tahoma, Verdana, Arial, sans-serif;}
+table.bidding tr td {border:0px solid #DDD;padding:0px; border-spacing:0px; white-space: nowrap; font-size:12px; font-weight:bold;}
+
+table.pointsTable {border-width:0;padding:0; font-family:Tahoma, Verdana, Arial, sans-serif;}
+table.pointsTable tr td {border:0px;padding:0px;white-space: nowrap; font-size:18px;}
+
+table.vul {border-width:0px;padding:0; border-collapse:collapse; font-family:Tahoma, Verdana, Arial, sans-serif;}
+table.vul tr td {border:0px;padding:0px;white-space: nowrap; font-size:8px; font-weight:bold;  background-color:#6699FF; color:white}
+
+table.options {font-size:18pt; border:0px; border-collapse:collapse; border-spacing:0px; padding:2px; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:normal;}
+table.options td {border:0px solid #DDD;padding-left:4px;padding-right:4px;padding-top:1px;padding-bottom:1px;white-space: nowrap;font-size:14px; }
+
+.trav {font-family:Courier New;font-weight:normal;font-size:10pt;}
+.resultsHeaderButton {width:80px;padding:2px;}
+
+.blankButton {margin:0px;border:0px;background-color:#EEEEEE;color:black;font-weight:bold;height:30px;padding:1px;vertical-align:text-top}
+
+table.calendar td {font-family:Verdana, Arial, Helvetica, sans-serif;}
+table.calendar th {font-weight: bold; color: blue;text-align: center;background-color:#7FFFD4; }
+
+.menuButton {min-width:75px; height:25px; font-size:12pt; border-width:1px; border-color:black; border-spacing:0px; padding-left:2px;padding-right:2px; background-color:#ffffdd;);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold;cursor:pointer;}
+	
+.menuButton:active {min-width:75px; height:25px; font-size:12pt; border-width:1px; border-color:black; border-spacing:0px; padding-left:2px;padding-right:2px; background-color:#bbbb99;);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold;cursor:pointer;}
+	
+.doubleHeightMenuButton {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	height:40px; font-size:10pt; border-width:1px; border-color:black; border-spacing:0px;  padding-left:2px;padding-right:2px; background-color:#ffffdd; font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:normal;cursor:pointer;}
+
+.sessionMenuButton {min-width:75px; height:25px; font-size:12pt; border-width:1px; border-color:black; border-spacing:0px; padding-left:2px;padding-right:2px; background-color:#bbffbb;);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold;cursor:pointer;}
+	
+.sessionMenuButton:active {min-width:75px; height:25px; font-size:12pt; border-width:1px; border-color:black; border-spacing:0px; padding-left:2px;padding-right:2px; background-color:#448844;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold;cursor:pointer;}
+	
+.btn-circle {
+  font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold;cursor:pointer;
+  border-width:1px; border-color:black; border-spacing:0px; padding-left:2px;padding-right:2px;
+  width:25px;
+  height: 25px;
+  background-color:#bbffbb;
+  font-size: 12pt;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-khtml-border-radius: 12px;
+	border-radius: 12px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+}
+
+.btn-circle:active {
+  font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold;cursor:pointer;
+  border-width:1px; border-color:black; border-spacing:0px; padding-left:2px;padding-right:2px;
+  width:25px;
+  height: 25px;
+  background-color:#448844;
+  font-size: 12pt;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-khtml-border-radius: 12px;
+	border-radius: 12px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+}
+
+.room {font-size:12px;}
+
+.shadow { box-shadow: 5px 5px 5px #888888;border-style:solid; border-width:1px; border-color:#000000; }
+
+#ruler { visibility: hidden; white-space: nowrap; }
+
+.break {page-break-before:always;}

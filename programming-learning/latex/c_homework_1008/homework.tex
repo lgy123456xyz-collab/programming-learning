@@ -1,0 +1,172 @@
+\documentclass{article}
+\usepackage{geometry}  
+\usepackage[UTF8]{ctex}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\lstset{
+    frame=single,               % 框住代码
+    backgroundcolor=\color{gray!10}, % 背景色
+    basicstyle=\ttfamily,       % 字体
+    keywordstyle=\color{blue},  % 关键字颜色
+    commentstyle=\color{green}, % 注释颜色
+    numbers=left,               % 行号
+    numberstyle=\tiny,          % 行号字体
+    breaklines=true             % 自动换行
+}
+\geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+
+
+\title{计算机作业 25/10/08}
+\author{PB25151789 刘广易}
+\date{\today} 
+
+\begin{document}
+\maketitle
+\section{P34 T4}
+\indent 代码：
+
+\begin{lstlisting}
+#include<stdio.h>
+int main()
+{
+while(1)
+{
+    double m,kg,bmi;
+    printf("Please input your height(m) and weight(kg),input \"0 0\" to quit.");
+    scanf("%lf %lf",&m,&kg);
+    if(m==0&&kg==0)
+    break;
+    bmi=kg/m/m;
+    bmi>25?(printf("You are so big\n")):(bmi<20?printf("You are so small\n"):printf("You are normal\n"));
+}
+    return 0;
+}
+\end{lstlisting}
+
+
+\indent 伪代码 \\
+
+重复执行 \\
+    从键盘输入身高(m)、体重(kg)\\
+    if m=0 and kg=0,退出\\
+    算BMI=体重/（身高*身高）\\
+    $BMI>25?$输出超重:($BMI<20?$输出瘦弱:输出正常)\\
+
+
+
+
+\indent 流程图：\\
+\begin{tikzpicture}[node distance=2cm, >=stealth]
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=red!20]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!20]
+\tikzstyle{decision} = [diamond, aspect=2, text centered, draw=black, fill=green!20]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=1cm, text centered, draw=black,fill=blue!20]
+
+% 节点定义
+\node (start) [startstop] {开始};
+\node (input) [io, below of=start] {输入身高、体重};
+\node (process0) [process, below of=input, yshift=-0.5cm] {计算BMI};
+\node (decide) [decision, below of=process0, yshift=-0.5cm] {$BMI>25$？};
+\node (decide1) [decision, below of=decide, yshift=-0.5cm] {$BMI<20$？};
+\node (process2) [io, right of=decide, xshift=3.5cm] {输出超重};
+\node (process4) [io, below of=decide1, yshift=-0.5cm] {输出正常};
+\node (stop) [io, below of=process4] {输入身高、体重};
+\node (process3) [io, left of=decide1, xshift=-3.5cm] {输出瘦弱};
+
+% 连接箭头
+\draw [arrow] (start) -- (input);
+\draw [arrow] (input) -- (process0);
+\draw [arrow] (process0) -- (decide);
+\draw [arrow] (decide) -- node[anchor=east] {NO} (decide1);
+\draw [arrow] (decide) -- node[anchor=south] {YES} (process2);
+\draw [arrow] (decide1) -- (process4);
+\draw [arrow] (process4) -- (stop);;
+\draw [arrow] (process2) |- (stop);
+\draw [arrow] (decide1) -- (process3);
+\draw [arrow] (process3) |- (stop);
+\draw [arrow] (stop.south) -- ++(0,-1)   
+                 -- ++(-9,0)             
+                 -- ++(0,11)              
+                 -- ++(3,0)              
+                 -- (process0.west);    
+
+\end{tikzpicture}
+
+\section{P34 T7}
+\indent 流程图：\\
+\begin{tikzpicture}[node distance=2cm, >=stealth]
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=red!20]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!20]
+\tikzstyle{decision} = [diamond, aspect=2, text centered, draw=black, fill=green!20]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=1cm, text centered, draw=black,fill=blue!20]
+
+
+
+\node (start) [startstop] {开始};
+\node (input) [io, below of=start] {输入数据};
+\node (process0) [process, below of=input, yshift=-0.5cm] {加到sum上;计输入数};
+\node (decide) [decision, below of=process0, yshift=-0.5cm] {输入次数=4？};
+\node (process2) [process, below of=decide, yshift=-0.5cm] {计算平均值};
+\node (output) [io, below of=process2, yshift=-0.5cm] {输出平均值};
+\node (stop) [startstop, below of=output] {结束};
+
+
+\draw [arrow] (start) -- (input);
+\draw [arrow] (input) -- (process0);
+\draw [arrow] (process0) -- (decide);
+\draw [arrow] (decide) -- node[anchor=east] {YES} (process2);
+\draw [arrow] (decide.west)node[anchor=south] {NO} 
+                            -- ++(-3,0)
+                            -- ++(0,5)
+                            -- ++(3,0)
+                            -- (input.west);
+\draw [arrow] (process2) -- (output);
+\draw [arrow] (output) -- (stop);;
+
+
+
+\end{tikzpicture}
+
+\section{P91 T5}
+\indent long long int占据64位八字节的数据 可以表示$-2^{63}$到$2^{63}-1$\\
+\indent 当整数运算结果超出long long int时可以将整数以十进制储存在数组中,写算法对数组内的数据进行四则运算\\
+\indent  \\
+\section{P91 T7}
+\indent 
+\begin{lstlisting}
+#include<stdio.h>
+#define A m==0&&kg==0) break;
+#define B bmi=kg/m/m;
+#define C printf("You are so big\n")):(bmi<20?printf("You are so small\n"):printf("You are normal\n"));
+#define D printf("Please input your height(m) and weight(kg),input \"0 0\" to quit.");
+#define E scanf("%lf %lf",&m,&kg);
+int main()
+{
+while(1)
+{
+    double m,kg,bmi;
+    D
+    E
+    if(A
+    B
+    bmi>25?(C
+}
+    return 0;
+}
+\end{lstlisting}
+
+\indent 编译不能通过的写法：\\
+
+\begin{lstlisting}
+    #define { (
+    #define } )
+\end{lstlisting}
+\indent因为包含C的关键字\\
+\end{document}

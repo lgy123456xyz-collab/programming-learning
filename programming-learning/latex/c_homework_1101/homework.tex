@@ -1,0 +1,103 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{geometry}  
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+
+
+\lstset{
+    frame=single,               % 框住代码
+    backgroundcolor=\color{gray!10}, % 背景色
+    basicstyle=\ttfamily,       % 字体
+    keywordstyle=\color{blue},  % 关键字颜色
+    commentstyle=\color{green}, % 注释颜色
+    numbers=left,               % 行号
+    numberstyle=\tiny,          % 行号字体
+    breaklines=true             % 自动换行
+}
+\title{计算机作业 25/11/01}
+\author{PB25151789 刘广易}
+\date{\today} 
+
+\begin{document}
+\maketitle 
+\section{P91 T11}
+\includegraphics[width=1\textwidth]{IMG_1103(20251101-220717).PNG }
+\newpage
+\section{P91 T14}
+\indent 代码：
+
+\begin{lstlisting}
+#include <stdio.h>
+int main() {
+    int input=0;
+    int output=0;
+    while (1) {
+        scanf("%d",&input);
+        if (input<0)
+            break;
+        if (input<=36000&&input>=0) {
+            output=input*0.03;
+            printf("%d\n",output);
+        }
+        if (input>36000&&input<=144400) {
+            output=input*0.1-2520;
+            printf("%d\n",output);
+        }
+        if (input>144400&&input<=300000) {
+            output=input*0.2-16920;
+            printf("%d\n",output);
+        }
+        if (input>300000&&input<=420000) {
+            output=input*0.25-31920;
+            printf("%d\n",output);
+        }
+        if (input>420000&&input<=660000) {
+            output=input*0.3-52920;
+            printf("%d\n",output);
+        }
+        if (input>660000&&input<=960000) {
+            output=input*0.35-85920;
+            printf("%d\n",output);
+        }
+        if (input>960000) {
+            output=input*0.45-181920;
+            printf("%d\n",output);
+        }
+    }
+}
+\end{lstlisting}
+
+用switch语句实现:注意到,对36000:144000模36000余数是1、4,可以用这个case0:第一档,case1;case2;case3:第二档.对后面几档模60000,余数分别是5 7 11 16,对这几个数分别写case就行了.
+\section{P92 T21}
+\includegraphics[width=0.8\textwidth]{IMG_1106(20251101-230015).PNG}
+\\
+\\
+伪代码:\\
+初始化a[n]为-1\\
+For i=0 to i$<$n\\
+    \indent从键盘输入n值\\
+    \indent For j=1 to j$>$0\\
+    \indent if a[n-1]$>$n \\
+    \indent\indent a[j]$=$a[j-1]\\
+    \indent \indent j$--$\\
+    \indent else 退出循环\\
+    \indent  结束循环\\
+    \indent a[j]=n\\
+    \indent For j=0 to j$<=$i\\
+    \indent\indent 输出a[j]\\
+    \indent 结束循环\\
+    \indent 输出换行符\\
+结束循环\\
+\section{P92 T34}
+将switch(m)上面的scanf改成如下程序:\\
+
+\begin{lstlisting}
+    char m=getchar();
+   if ((m!='1')&&(m!='2')&&(m!='0')) {
+       printf("illegal input\n");
+   }
+\end{lstlisting}
+\end{document}

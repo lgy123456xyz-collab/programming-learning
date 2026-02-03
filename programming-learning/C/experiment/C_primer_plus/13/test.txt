@@ -1,0 +1,14 @@
+This is a sample text file.
+You can use it to test file reading functions.
+
+Hello, world!
+The quick brown fox jumps over the lazy dog.
+jaldsfj
+alksfdkl
+kafjdsk
+fjkdjk
+fghjklghjklsdhoifhoiwhaifojeiwojawfiojef
+ijaesklfjesklajkldfs
+sakljflkajkldfjklajskljjjjjjjjjjjjjjjjjj
+jjjjjjioewajiojefiojaiowjefiojadskhfsjia
+nghsihiasdifjaskldjfkldasjklfdjsak

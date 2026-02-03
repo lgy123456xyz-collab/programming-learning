@@ -1,0 +1,42 @@
+\documentclass{article}
+\title{Linear algebra homework rework 2025/09/29}
+\author{largeoyos}
+\date{\today}
+\usepackage{amsmath}
+\usepackage{setspace}
+
+
+\begin{document}
+\maketitle{Problem.4}
+
+
+$$\left|
+\begin{matrix}
+x_{1}&y &\cdots&y \\ z&x_{2}&\cdots&y \\ \vdots&\vdots&\ddots&\vdots \\ z&z&\cdots&x_{n}
+\end{matrix}
+\right|=\begin{vmatrix}
+x_{1}&y&\cdots&y \\ z&x_2&\cdots&y \\ \vdots&\vdots&\ddots&\vdots& \\ z&z&\cdots&y+(x_{n}-y)
+\end{vmatrix}=(x_{n}-y)\cdot D_{n-1}+\begin{vmatrix}
+x_{1}&y&y&\cdots&y&y \\ z&x_{2}&y&\cdots&y&y \\ z&z&x_{3}&\cdots &y &y \\ \vdots&\vdots&\vdots&\ddots&\vdots&\vdots \\ z&z&z&\cdots&x_{n-1}&y \\ z&z&z&\cdots&z&y
+\end{vmatrix}$$
+
+$$=(x_{n}-y)\cdot D_{n-1}+\begin{vmatrix}
+x_{1}&y &y &\cdots&y&y \\ z-x_{1}&x_2-y&0&\cdots&0&0 \\ z-x_{1}&z-y&0 &\cdots&0&0 \\ \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\ z-x_{1} & z-y & z-y & \cdots & x_{n-1}-y  & 0 \\ z-x_{1} & z-y & z-y & \cdots & z-y & 0 \\ 
+\end{vmatrix}_{n}$$
+$$=(x_{n}-y)\cdot D_{n-1}+(-1)^{n+1}y\begin{vmatrix}
+z-x_{1} & x_{2}-y & 0 & \cdots & 0  &  \\ z-x_{1} & z-y & x_{3}-y & \cdots &0 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ z-x_{1} & z-y  & z-y & \cdots & x_{n-1}-y \\ z-x_{1} & z-y & z-y & \cdots &  z-y 
+\end{vmatrix}_{n-1}$$
+$$=(x_{n}-y)\cdot D_{n-1}+(-1)^{n+1}y\begin{vmatrix}
+z-x_{1} & x_{2}-y & 0 & \cdots & 0  &  \\ 0 & z-x_{2} & x_{3}-y & \cdots &0 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 0 & 0  & 0 & \cdots & x_{n-1}-y \\ 0 & 0 & 0 & \cdots &  z-x_{n-1} 
+\end{vmatrix}_{n-1}$$
+$$=(x_{n}-y)\cdot D_{n-1}+(-1)^{n+1}y\cdot \prod_{i=1}^{n-1}(z-x_{i})$$
+    Hence $D_{n}=(x_{n}-y)\cdot+y\cdot\prod^{n-1}_{i=1}(x_{i}-z)$ \\
+    Similarly, $D_{n}=(x_{n}-z)\cdot+y\cdot\prod^{n-1}_{i=1}(x_{i}-y)$ \\
+   
+    \large {when $y\neq z$ , $D_{n}=\frac{y\prod^{n}_{i=1}(x_{i}-z)-x\prod^{n}_{i=1}(x_{i}-y)}{y-z}$}
+
+ 
+
+
+
+\end{document}

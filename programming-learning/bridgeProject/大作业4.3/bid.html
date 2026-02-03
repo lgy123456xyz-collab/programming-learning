@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>叫品提示</title>
+    <style>
+        :root {
+            --table-green: #1a4a1a;
+            --card-white: #f8f9fa;
+            --accent: #ffeb3b;
+        }
+
+        body {
+            margin: 0; background-color: #121212;
+            font-family: "Segoe UI", sans-serif;
+            display: flex; flex-direction: row; height: 100vh; color: white;
+            overflow: hidden;
+        }
+
+        /* 主界面 */
+        .main-content {
+            flex: 1; display: flex; flex-direction: column; align-items: center;
+            background: radial-gradient(circle, var(--table-green) 0%, #051005 100%);
+            position: relative; padding-top: 10px;
+        }
+
+        /* 叫牌表 */
+        .bidding-table {
+            width: 380px; background: rgba(0,0,0,0.6); 
+            border-radius: 8px; border: 1px solid #444; 
+        }
+        .bidding-header {
+            display: grid; grid-template-columns: repeat(4, 1fr);
+            background: #333; text-align: center; padding: 8px 0; font-weight: bold;
+        }
+        #bidding-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr);
+            height: 180px; /* 约 4 轮叫牌的高度 */
+            overflow-y: scroll; /* 强制显示滚动条以便滚轮操作 */
+            text-align: center;
+            scrollbar-width: thin; 
+        }
+        /* Webkit 滚动条样式 */
+        #bidding-grid::-webkit-scrollbar { width: 6px; }
+        #bidding-grid::-webkit-scrollbar-thumb { background: #555; border-radius: 3px; }
+
+        .cell { padding: 6px; border-bottom: 1px solid #222; min-height: 30px; font-size: 16px; }
+        .cell.red { color: #ff5252; }
+        .cell.x { color: #f44336; font-weight: 900; }
+        .cell.xx { color: #2196f3; font-weight: 900; }
+
+        #status-bar { font-size: 18px; color: var(--accent); margin: 10px 0; font-weight: bold; }
+
+        /* 叫牌盒按钮缩小 */
+        #bidding-box {
+            background: rgba(0,0,0,0.7); padding: 15px;
+            border-radius: 10px; display: grid;
+            grid-template-columns: repeat(5, 70px); gap: 6px;
+            border: 1px solid #555;
+        }
+
+        .btn {
+            width: 70px; height: 42px; border: none; border-radius: 4px;
+            font-size: 16px; font-weight: bold; cursor: pointer;
+            background: var(--card-white); transition: 0.1s;
+        }
+        .btn:hover:not(:disabled) { background: #fff; transform: translateY(-2px); }
+        .btn:disabled { opacity: 0.1; cursor: not-allowed; }
+        
+        .btn-n { color: #6a4c93; } .btn-s { color: #111; }
+        .btn-h { color: #d62828; } .btn-d { color: #f77f00; }
+        .btn-c { color: #386641; }
+        
+        .action-row { grid-column: span 5; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 6px; margin-top: 6px; }
+        .btn-p { background: #4caf50; color: white; }
+        .btn-x { background: #f44336; color: white; }
+        .btn-xx { background: #2196f3; color: white; }
+
+        /* 提示气泡 */
+        #hint-bubble {
+            position: absolute; background: white; color: #222;
+            padding: 12px; border-radius: 8px; z-index: 1000;
+            display: none; width: 200px; box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+            font-size: 14px; border: 2px solid var(--accent);
+        }
+
+        /* 历史面板 */
+        .history-panel {
+            width: 260px; background: #1a1a1a; border-left: 1px solid #333;
+            display: flex; flex-direction: column;
+        }
+        .history-title { padding: 15px; font-size: 16px; background: #252525; border-bottom: 1px solid #333; }
+        #history-list { flex: 1; overflow-y: auto; padding: 10px; font-size: 12px; color: #aaa; }
+    </style>
+</head>
+<body>
+
+    <div class="main-content">
+        <div class="bidding-table">
+            <div class="bidding-header">
+                <div>西</div><div>北</div><div>东</div><div>南</div>
+            </div>
+            <div id="bidding-grid"></div>
+        </div>
+
+        <div id="status-bar">轮到【南】家叫牌</div>
+
+        <div style="margin-bottom: 10px;">
+            <button onclick="resetGame()" style="padding: 5px 15px; cursor: pointer; background: #444; color: white; border: none; border-radius: 3px;">重新开始</button>
+        </div>
+
+        <div id="bidding-box"></div>
+        <div id="hint-bubble"></div>
+    </div>
+
+    <div class="history-panel">
+        <div class="history-title">历史记录</div>
+        <div id="history-list"></div>
+    </div>
+
+    <script>
+        const players = ['西', '北', '东', '南'];
+        let curPlayerIdx = 3, lastBidVal = 0, lastBidderIdx = -1, lastAction = "", bidSequence = [], passCount = 0, gameActive = true;
+
+        const grid = document.getElementById('bidding-grid');
+        const box = document.getElementById('bidding-box');
+        const bubble = document.getElementById('hint-bubble');
+
+        function initBox() {
+            box.innerHTML = '';
+            // 按钮生成 (同前)
+            for (let lv = 1; lv <= 7; lv++) {
+                ['N','S','H','D','C'].forEach((sId, idx) => {
+                    const btn = document.createElement('button');
+                    const label = sId === 'N' ? 'NT' : (sId==='S'?'♠':(sId==='H'?'♥':(sId==='D'?'♦':'♣')));
+                    btn.className = `btn btn-${sId.toLowerCase()}`;
+                    btn.innerHTML = `${lv}${label}`;
+                    btn.dataset.val = lv * 10 + (5 - idx);
+                    btn.dataset.code = `${lv}${sId}`;
+                    btn.onclick = (e) => handleAction(e, parseInt(btn.dataset.val), btn.dataset.code, (sId==='H'||sId==='D'));
+                    box.appendChild(btn);
+                });
+            }
+            const actions = document.createElement('div');
+            actions.className = 'action-row';
+            actions.innerHTML = `
+                <button class="btn btn-p" onclick="handleAction(event, 0, 'P')">PASS</button>
+                <button class="btn btn-x" id="btn-x" onclick="handleAction(event, -1, 'X')">X</button>
+                <button class="btn btn-xx" id="btn-xx" onclick="handleAction(event, -2, 'XX')">XX</button>
+            `;
+            box.appendChild(actions);
+            // 填充起始位
+            for(let i=0; i<curPlayerIdx; i++){
+                const empty = document.createElement('div');
+                empty.className = 'cell';
+                grid.appendChild(empty);
+            }
+            updateUI();
+        }
+
+        async function handleAction(e, val, code, isRed) {
+            if(!gameActive) return;
+            e.stopPropagation();
+
+            if (bubble.style.display === 'block' && bubble.dataset.target === code) {
+                execute(val, code, isRed);
+                bubble.style.display = 'none';
+                return;
+            }
+
+            const res = await fetch('/get_hint', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ sequence: [...bidSequence, code].join('_') })
+            });
+            const data = await res.json();
+            bubble.dataset.target = code;
+            bubble.innerText = data.hint;
+            bubble.style.display = 'block';
+            const rect = e.target.getBoundingClientRect();
+            bubble.style.left = `${rect.left + rect.width/2 - 100}px`;
+            bubble.style.top = `${rect.top - bubble.offsetHeight - 10}px`;
+        }
+
+        function execute(val, code, isRed) {
+            const cell = document.createElement('div');
+            cell.className = `cell ${isRed?'red':''} ${code==='X'?'x':''} ${code==='XX'?'xx':''}`;
+            cell.innerText = code === 'P' ? '—' : code;
+            grid.appendChild(cell);
+            
+            // 自动滚动到底部
+            grid.scrollTop = grid.scrollHeight;
+
+            bidSequence.push(code);
+
+            // 逻辑判定：PASS 计数
+            if (code === 'P') {
+                passCount++;
+            } else {
+                passCount = 0; // 重置
+                if (val > 0) { lastBidVal = val; lastBidderIdx = curPlayerIdx; lastAction = ""; }
+                else { lastAction = code; }
+            }
+
+            // 停止叫牌条件：
+            // 1. 开叫后连续 3 个 PASS
+            // 2. 开头连续 4 个 PASS (大洗牌)
+            if ((lastBidVal > 0 && passCount >= 3) || (lastBidVal === 0 && passCount >= 4)) {
+                endGame();
+                return;
+            }
+
+            curPlayerIdx = (curPlayerIdx + 1) % 4;
+            updateUI();
+        }
+
+        function endGame() {
+            gameActive = false;
+            document.getElementById('status-bar').innerText = "叫牌已结束";
+            document.getElementById('history-list').innerHTML += `<div>[${new Date().toLocaleTimeString()}] ${bidSequence.join(', ')}</div>`;
+            document.querySelectorAll('.btn').forEach(b => b.disabled = true);
+        }
+
+        function resetGame() {
+            grid.innerHTML = '';
+            bidSequence = [];
+            lastBidVal = 0; lastBidderIdx = -1; lastAction = ""; passCount = 0;
+            curPlayerIdx = 3;
+            gameActive = true;
+            initBox();
+        }
+
+        function updateUI() {
+            if(!gameActive) return;
+            document.getElementById('status-bar').innerText = `轮到【${players[curPlayerIdx]}】家叫牌`;
+            document.querySelectorAll('.btn[data-val]').forEach(btn => {
+                const v = parseInt(btn.dataset.val);
+                if (v > 0) btn.disabled = v <= lastBidVal;
+            });
+            const isOpp = lastBidderIdx !== -1 && (curPlayerIdx % 2 !== lastBidderIdx % 2);
+            document.getElementById('btn-x').disabled = !(isOpp && lastAction === "");
+            document.getElementById('btn-xx').disabled = !(lastAction === "X");
+        }
+
+        document.addEventListener('click', () => bubble.style.display = 'none');
+        initBox();
+    </script>
+</body>
+</html>

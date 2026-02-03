@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bridge-All hands
+    / HN Zheng, Kimi made the primarily verison
+  </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .bridge-table {
+      border: 0;
+      width: 80%;
+      max-width: 800px;
+      border-collapse: collapse;
+      text-align: center;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .bridge-table td {
+      border: 0;
+      padding: 20px;
+      vertical-align: middle;
+    }
+    .player h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+    }
+    .player .suit-group {
+      margin-bottom: 5px;
+      text-align: left;
+    }
+    .player .suit-group span {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+    .compass {
+      border: 2px solid;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .pbn-output {
+      margin-top: 20px;
+      font-size: 14px;
+      white-space: pre-wrap;
+      text-align: left;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <table class="bridge-table">
+    <tr>
+      <td></td>
+      <td class="player" id="player-North"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="player" id="player-West"></td>
+      <td>
+        <table class="compass">
+          <tr><td colspan="3"><div id="nLabel"> N </div></td></tr>
+          <tr><td id="wLabel"> W </td><td id="boardNo">  </td><td id="eLabel"> E </td></tr>
+          <tr><td colspan="3"><div id="sLabel">  S </div></td></tr>
+        </table>
+      </td>
+      <td class="player" id="player-East"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="player" id="player-South"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan=3 class="pbn-output" id="pbn-output"></td>
+    </tr>
+  </table>
+
+  
+
+  <script>
+    // 定义一副牌
+    const suits = ['♠', '♥', '♦', '♣']; // 花色
+    const ranks = ['A', 'K', 'Q', 'J', '10', '9', '8', '7', '6', '5', '4', '3', '2']; // 点数（从大到小）
+
+    // 生成一副牌
+    function generateDeck() {
+      let deck = [];
+      for (let suit of suits) {
+        for (let rank of ranks) {
+          deck.push(suit + rank); // 将每张牌的花色和点数组合起来，花色在前
+        }
+      }
+      return deck;
+    }
+
+    // 洗牌算法
+    function shuffleDeck(deck) {
+      for (let i = deck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1)); // 随机生成一个索引
+        [deck[i], deck[j]] = [deck[j], deck[i]]; // 交换两张牌
+      }
+    }
+
+    // 发牌
+    function dealCards(deck) {
+      let players = { 'North': [], 'East': [], 'South': [], 'West': [] }; // 四个玩家
+      for (let i = 0; i < deck.length; i++) {
+        let player = Object.keys(players)[i % 4]; // 根据索引分配玩家
+        players[player].push(deck[i]); // 将牌发给玩家
+      }
+      return players;
+    }
+
+    // 理牌：按花色和点数排序（从大到小）
+    function sortCards(cards) {
+      return cards.sort((a, b) => {
+        const suitOrder = { '♠': 0, '♥': 1, '♦': 2, '♣': 3 }; // 花色顺序：黑桃 > 红桃 > 方块 > 草花
+        const rankOrder = { 'A': 14, 'K': 13, 'Q': 12, 'J': 11, '10': 10, '9': 9, '8': 8, '7': 7, '6': 6, '5': 5, '4': 4, '3': 3, '2': 2 }; // 点数顺序：从大到小
+
+        const suitA = a[0]; // 获取花色
+        const rankA = a.slice(1); // 获取点数
+        const suitB = b[0];
+        const rankB = b.slice(1);
+
+        if (suitOrder[suitA] === suitOrder[suitB]) {
+          return rankOrder[rankB] - rankOrder[rankA]; // 如果花色相同，按点数从大到小排序
+        }
+        return suitOrder[suitA] - suitOrder[suitB]; // 否则按花色排序
+      });
+    }
+
+    // 按花色分组显示牌
+    function groupCardsBySuit(cards) {
+      const groupedCards = { '♠': [], '♥': [], '♦': [], '♣': [] };
+      for (let card of cards) {
+        const suit = card[0];
+        const rank = card.slice(1);
+        groupedCards[suit].push(rank); // 只存储点数
+      }
+      return groupedCards;
+    }
+
+    // 生成PBN格式的字符串
+    function generatePBN(boardNo,vulText,players) {
+	const pbnHead = "% PBN 2.1\n% EXPORT\n% Content-type: text/x-pbn; charset=ISO-8859-1\n%Creator: Bridge Solver Online\n[Event \"USTC Bridge\"]\n[Site \"\"]\n[Date \"\"]\n[West \"\"]\n[North \"\"]\n[East \"\"]\n[South \"\"]\n";
+	const pbn = [];
+	pbn.push(`${pbnHead}`);
+	pbn.push("[Board \"");
+	pbn.push(`${boardNo}`);
+	pbn.push("\"]\n");
+
+	const dealer = ["N", "E", "S", "W"];
+	
+	pbn.push("[Dealer \"");
+	pbn.push(`${dealer[(boardNo - 1) % 4]}`);
+	pbn.push("\"]\n");
+	pbn.push("[Vulnerable \"");
+	pbn.push(`${vulText}`);
+	pbn.push("\"]\n");
+      for (let player of ['North', 'East', 'South', 'West']) {
+        const groupedCards = groupCardsBySuit(players[player]);
+        let playerPBN = player === 'North' ? `[Deal \"${player[0]}:` : " "; // 北家使用 ["N:，其他家使用空格
+        for (let suit of suits) {
+          if (groupedCards[suit].length === 0) {
+            playerPBN += '';
+          } else {
+            // 在生成PBN时将10替换为T
+            const ranksForPBN = groupedCards[suit].map(rank => rank === '10' ? 'T' : rank);
+            playerPBN += ranksForPBN.join('');
+          }
+          playerPBN += '.';
+        }
+        playerPBN = playerPBN.slice(0, -1); // 去掉最后一个多余的点号
+        playerPBN += player === 'West' ? '\"]' : ""; // 西家结尾用 ]，其他家不加
+        pbn.push(playerPBN);
+      }
+      return pbn.join('');
+    }
+
+    // 主程序
+    function main() {
+      let deck = generateDeck(); // 生成一副牌
+      shuffleDeck(deck); // 洗牌
+      let players = dealCards(deck); // 发牌
+
+      // 对每个玩家的牌进行理牌
+      for (let player in players) {
+        players[player] = sortCards(players[player]);
+      }
+	
+      // 为每个玩家生成HTML内容
+      const playerOrder = ['North', 'East', 'South', 'West'];
+      for (let player of playerOrder) {
+        const playerDiv = document.getElementById(`player-${player}`);
+        const playerHeader = document.createElement('h3');
+        playerDiv.appendChild(playerHeader);
+
+        const groupedCards = groupCardsBySuit(players[player]);
+
+        for (let suit of suits) {
+          const suitGroup = document.createElement('div');
+          suitGroup.className = 'suit-group';
+          const suitLabel = document.createElement('span');
+          suitLabel.textContent = suit + ': ';
+          suitGroup.appendChild(suitLabel);
+
+          groupedCards[suit].forEach(rank => {
+            const cardSpan = document.createElement('span');
+            cardSpan.textContent = rank; // 只显示点数
+            suitGroup.appendChild(cardSpan);
+          });
+
+          playerDiv.appendChild(suitGroup);
+        }
+      }
+
+	// 生成牌号
+	const boardNo = Math.floor(Math.random() * 16 + 1);
+        const board = document.getElementById(`boardNo`);
+	board.textContent = boardNo;
+
+	// 局况显示
+	const vulText = ["None", "NS", "EW", "Both"];
+	const nLabel = document.getElementById(`nLabel`);
+	const sLabel = document.getElementById(`sLabel`);
+	const eLabel = document.getElementById(`eLabel`);
+	const wLabel = document.getElementById(`wLabel`);
+	switch (boardNo) {
+	case 2:
+	case 5:
+	case 12:
+	case 15:
+	    nLabel.style.color = "red";
+	    sLabel.style.color = "red";
+	    break;
+	case 3:
+	case 6:
+	case 9:
+	case 16:
+	    eLabel.style.color = "red";
+	    wLabel.style.color = "red";
+	    break;
+	case 4:
+	case 7:
+	case 10:
+	case 13:
+	    nLabel.style.color = "red";
+	    sLabel.style.color = "red";	    
+	    eLabel.style.color = "red";
+	    wLabel.style.color = "red";
+	    break;
+	}
+
+	// 生成PBN格式的字符串并显示
+      const pbnOutput = document.getElementById('pbn-output');
+	pbnOutput.textContent = generatePBN(boardNo,vulText[(boardNo - 1 + Math.floor((boardNo-1)/4)) % 4],players);
+    }    
+
+    // 页面加载完成后运行程序
+    window.onload = main;
+  </script>
+</body>
+</html>

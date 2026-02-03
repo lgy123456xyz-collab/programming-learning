@@ -1,0 +1,182 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav button {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+nav button:hover {
+    background-color: #004085;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.content-section {
+    display: none;
+    padding: 20px 0;
+}
+
+.content-section.active {
+    display: block;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* 表格样式 */
+#rank-table, .history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#rank-table th, .history-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+#rank-table td, .history-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#rank-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* 表单和输入样式 */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* 结果区域 */
+.result-area {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9f7ff;
+    border: 1px solid #b3e0ff;
+    border-radius: 4px;
+}
+
+.result-area strong {
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+/* 管理员面板特定样式 */
+#admin h3 {
+    margin-top: 30px;
+    color: #ff9800;
+}
+
+.match-record-form {
+    border: 1px solid #ff9800;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.history-table button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+}
+.history-table button:hover {
+    background-color: #c82333;
+}
+/* 定义闪烁动画：从透明到可见再到透明 */
+@keyframes blink-animation {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.blink-effect {
+    animation: blink-animation 0.5s ease-in-out 2;
+    font-weight: bold;
+}
+.btn-confirming {
+    background-color: #ff9800 !important; 
+    transform: scale(1.05); 
+    transition: all 0.2s;
+}
+
+.btn-confirming::after {
+    content: " (请再次点击)";
+    font-size: 12px;
+}
+
+.nav-row {
+    margin-bottom: 10px; 
+    display: flex;       
+    flex-wrap: wrap;    
+    gap: 8px;           
+    justify-content: flex-start; 
+}
+
+
+nav {
+    padding: 10px;
+}

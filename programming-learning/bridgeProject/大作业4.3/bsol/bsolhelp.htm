@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Bridge Solver Help</title>
+</head>
+<body>
+<div style="margin-left:20px;margin-right:20px;font-size=12px;max-width:800px;">
+  <span style="font-size:30px;font-weight:bold;">Results Analysis Overview</span>
+  <p>Results Analysis provides  a number of additional features. They are described in detail in the individual sections of this help file, but some of the key features are:</p>
+  <li>on the &quot;All Pairs&quot; screen a column &quot;Dbl Dummy&quot; provides a bar chart indication of how well you and your partner, and all other pairs, fared against the double dummy targets for the particular contracts played or defended. </li>
+  <br>
+  <li> For Teams events, the &quot;All Pairs&quot; screen scores the overall performance of individual pairs in Cross Imps. The results for NS and EW pairs are merged into a single ranking table. </li>
+  <br>
+  <li>The &quot;Personal&quot; screen categorises all hands played by role (declarer, and defender on lead, for you and your partner or for any other selected pair). For each hand the result, in terms of percentage or cross imps, is shown together with a bar chart representation. If double dummy tricks information is available this screen also shows the ETF (extra trick factor) numerically and by a bar chart for each hand, and the average ETF achieved for each role. ETF is the number of tricks made by declarer or defenders relative to their double dummy target for the contract played.</li>
+  <br>
+  <li>The &quot;Board&quot; screen shows an alternative representation of the traveller for the currently selected board, together with additional information. It includes a frequency table showing how many pairs bid each contract played on that board. The traveller includes bar charts showing the result obtained by each pair on the board, and the ETF obtained by each pair on the board. If lead card information is available then the display also indicates whether the lead card played by each pair was potentially favourable to the declarer (based on double dummy information). </li>
+  <p><em> A couple of the above features rely on full makeable double dummy tricks information being available in the deal file containing the hand records for the session. Some clubs do not generate this, or only generate it for declarer/suit combinations where 7 or more tricks can be made. In this case, Bridge Solver Online will calculate full double dummy information for the hand records but, unless it has previously  calculated information and cached the data for this particular bridge session, it may take a short time before the missing information is filled in on the display. This could be anything from a few seconds to a minute or so, depending on the number of hands and the current load on the system.</em></p>
+  <p><BR>
+    <a name="ranking"></a>
+    <span style="font-size:30px;font-weight:bold;">All Pairs</span>
+    <br>
+    <img src="pics/ranking.jpg" width=780px></img>
+    <BR>
+    The &quot;Dbl Dummy&quot; column provides a visual representation of the peformance of the pair against the double dummy targets for the particular
+  contracts played. The length of the individual coloured bar segments represents the number of boards
+  on which the pair performance exceeded, met, or failed to meet the double dummy target for the 
+  contract played. For example, if double dummy analysis shows that 4H by N should make 10 tricks then
+  the target for the pair playing NS is 10, and the target for EW is 3. if NS make 9 tricks then EW have exceed their target. The various colours used for the bars in this column have the following meanings: </p>
+  <ul>
+<li>
+green segment represents number of boards on which the pair exceeded the target
+</li>
+<li>
+pale green segment represents number of boards exactly meeting target.
+</li>
+<li>
+red segment represents number of boards on which the pair failed to meet the target.
+</li>
+<li>
+a pale blue segment, if present, represents the number of boards for which the performance is not
+relevant or is unknown, e.g. the board was passed out, or the double dummy tricks target information
+was not available for these boards.</li>
+</ul>
+  <p>For a single board the comparison with double dummy targets is not very meaningful (double dummy targets are not always realistically achievable when playing single dummy !). However, measured over a number of hands, and in comparison to the achievements of other pairs, it should provide a good guide to how well you played or defended the contracts. It says nothing about how well you bid the hands - you may play well and get a bottom score if you are in the wrong contract.</p>
+  <p>The above diagram shows the results from a pairs event (only the player names have been changed to protect the innocent). It can be seen that, not surprisingly, the pairs towards the top of the ranking tend to have made or exceeded double dummy targets on more boards than players lower down the ranking. However, because the quality of bidding, and luck, also play a major part it can be seen that there are exceptions to the general trend.</p>
+  <p>If the session data includes the lead cards played by the defenders for each contract, Bridge Solver Online  provides the option to display lead-adjusted data in the double dummy column. If this option is selected the double dummy target for each board played by a pair is adjusted depending on the actual lead played by the defenders. For example, double dummy analysis might predict that on a particular board it is possible to make 4S by North assuming that the defenders make the best possible lead. However, the actual lead played at the table might be sub-optimal, perhaps by enabling declarer to take a successful finesse which could not have been accomplished if declarer had to lead the suit. When this is the case  the double dummy target for declarer is modified accordingly. The lead-adjusted target will always be the same or higher than the non-adjusted target, never lower.</p>
+  <p>Bridge Solver will calculate the lead-adjusted double dummy targets when Results Analysis for a particular session is invoked. If the information is not already cached on the server it may take between a few seconds and a minute or so to become available. When it is available the &quot;Dbl Dummy&quot; header on the &quot;All Pairs&quot; table will change to a dropdown box with two settings: &quot;Dbl Dummy&quot; and &quot;Lead-Adjusted DD&quot;.</p>
+  <p><img src="pics/ranking2.jpg" width="561" height="30" style="margin-left:100px;"> </p>
+  <p>Click on the &quot;Double Dummy&quot; dropdown list header and select &quot;Lead-Adjusted DD&quot; to see the difference it makes. Note that changing the selection in the &quot;All Pairs&quot; display also changes the corresponding selection in the &quot;Personal&quot; display (see below). </p>
+  <p> <br>
+    <a name="scorecard"></a>
+    <span style="font-size:30px;font-weight:bold;">Personal</span>
+    <br>
+    <img src="pics/scorecard.jpg" width=780px></img>
+    <br>
+    The &quot;Personal&quot; display provides a board by board bar chart summary of results, and a bar chart of performance relative to double dummy targets
+for the contracts played. By default the boards are categorised by player role, making it easy to compare a player's performance in
+different roles. It is also interesting to compare performance on a board in comparison to performance against the double dummy
+target on the same board. If the two differ it may be, for example, that the board was played or defended well by the current pair
+but they were in the wrong contract (or maybe the opponents found the best contract while those at other tables did not). Averaged
+over a significant number of boards the percentage of boards making or exceeding double dummy targets and the average extra trick factor (ETF)
+should provide a better indication of card play performance than simply looking at the average percentages achieved on boards
+played. <br>
+<br>
+As described in the overview sesssion, full double dummy tricks information may not be present in the uploaded hand record file for the session. If this is the case then, initially, "No Data" will be displayed on the relevant lines of
+the table and these boards are omitted from the ETF calculations. However, Bridge Solver Online will proceed to calculate the missing data and will redraw the display to take account of the calculated data when it is ready. This may typically take between a few seconds and a few minutes depending on system load </p>
+  <p>As described in the &quot;All Pairs&quot; help section, Bridge Solver Online also calculates the effect on the double dummy targets for declarers of the specific opening leads played at the table. When this information become available the &quot;DD Tricks(ETF)&quot; header in the the &quot;Personal&quot; table will change to a dropdown list containing the additional option &quot;Adjusted ETF&quot;. The first image below shows the extract from the scorecard for a particular player when DD tricks(ETF) is selected in the dropdown list:</p>
+  <p><img src="pics/scorecard2.jpg" width="660" height="133" style="margin-left:100px;"></p>
+  <p>The meaning of the red or green background colours on some lead cards is indicated on the main diagram at the head of this section. A grey background
+  on a lead card indicates a data entry error, because that card is not present in the hand of the player on lead.</p>
+  <p>The next image shows the revised scorecard for the same player if the &quot;Adjusted ETF&quot; option is selected in the dropdown list. Note that on 3 of the 4 boards played by Jim Murdoch his ETF has decreased when &quot;Adjusted ETF&quot; is selected. This is because the defender on lead failed to find the optimal lead, and thus the double dummy target for the declarer has been revised upwards to take account of this. As a result, the average ETF for the four boards drops from 1.5 to 0.5. More information about the individual boards can be obtained using the &quot;Board&quot; display. </p>
+  <p><img src="pics/scorecard3.jpg" width="658" height="131" style="margin-left:100px;"></p>
+  <p>Note that changing the setting of the dropdown list also changes the corresponding setting in the &quot;All Pairs&quot; display. <BR>
+  <BR>
+  It is also possible to change the "Personal" display so that the boards are ordered by board number, rather than by player role. This is achieved by choosing
+  "Sort By Board" rather than "Sort By Role" from the dropdown menu at the top left of the display.
+    <BR><BR>
+    <img src="pics/scorecard4.jpg" width=780px></img>
+	<BR>
+    <a name="traveller"></a><span style="font-size:30px;font-weight:bold;">Board</span>
+    <br>
+    <img src="pics/traveller.jpg" width=780px></img></p>
+</div>
+</body>
+</html>

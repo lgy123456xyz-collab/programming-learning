@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全功能桥牌中心 - 桥牌分值求解器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-row">
+                <button onclick="showSection('leaderboard')">🏆 排行榜</button>
+                <button onclick="showSection('calculator')">🧮 算分工具</button>
+                <button onclick="location.href='/bsol/index.htm'">🔍 双明手求解</button>
+                <button onclick="location.href='/bid'">💬 叫牌提示</button>
+                <button onclick="showSection('ocr')">📸 牌例识别</button>
+                <button id="auth-btn" onclick="showSection('login')">👤 登录/注册</button>
+            </div>
+            
+            <div class="nav-row">
+                <button id="submit-score-btn" onclick="showSection('user-submit')">📝 提交成绩</button>
+                <button id="my-records-btn" onclick="showSection('user-records')">📜 我的申请</button>
+            </div>
+
+            <div class="nav-row">
+                <button id="audit-btn" style="display:none;" onclick="showSection('admin-audit')">⏳ 待审核事项</button>
+                <button id="admin-btn" style="display:none;" onclick="showSection('admin')">🔑 管理员统计</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="leaderboard" class="content-section active">
+            <h2>🏆 积分排行榜</h2>
+            <table id="rank-table">
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>Name</th>
+                        <th>Rating</th>
+                        <th>Games</th>
+                        <th>Wins</th>
+                        <th>Ties</th>
+                        <th>Loses</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+
+
+
+        <div id="user-submit" class="content-section">
+            <h2>📝 提交比赛成绩</h2>
+            <div class="score-input-section">
+                <label for="user-challenger">挑战者 (Challenger):</label>
+                <input type="text" id="user-challenger" placeholder="输入挑战者用户名">
+
+                <label for="user-opponent">被挑战者 (Opponent):</label>
+                <input type="text" id="user-opponent" placeholder="输入被挑战者用户名">
+
+                <label for="user-match-result">比赛结果 (以挑战者视角):</label>
+                <select id="user-match-result">
+                    <option value="1">挑战者 胜 (Win)</option>
+                    <option value="0.5">平局 (Tie)</option>
+                    <option value="0">挑战者 负 (Loss)</option>
+                </select>
+
+                <button onclick="submitForAudit()">提交审核</button>
+                <p id="user-submit-message"></p>
+            </div>
+        </div>
+
+        <div id="user-records" class="content-section">
+            <h2>📜 我的提交记录</h2>
+            <table id="user-audit-table">
+                <thead>
+                    <tr>
+                        <th>提交时间</th>
+                        <th>挑战者</th>
+                        <th>被挑战者</th>
+                        <th>结果</th>
+                        <th>状态</th>
+                    </tr>
+                </thead>
+                <tbody id="user-audit-body">
+                    </tbody>
+            </table>
+        </div>
+
+        <div id="calculator" class="content-section">
+            <div class="score-calculator-container">
+                <h2>🧮 桥牌分值计算器</h2>
+                
+                <div class="input-group">
+                    <label for="contract-level">定约级数 (1-7):</label>
+                    <input type="number" id="contract-level" min="1" max="7" value="4">
+                </div>
+                <div class="input-group">
+                    <label for="contract-suit">定约花色:</label>
+                    <select id="contract-suit">
+                        <option value="C">♣ (草花)</option>
+                        <option value="D">♦ (方片)</option>
+                        <option value="H">♥ (红心)</option>
+                        <option value="S">♠ (黑桃)</option>
+                        <option value="NT">NT (无将)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="double">加倍/再加倍:</label>
+                    <select id="double">
+                        <option value="None">无</option>
+                        <option value="X">X (加倍)</option>
+                        <option value="XX">XX (再加倍)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="vulnerability">局况:</label>
+                    <select id="vulnerability">
+                        <option value="None">双方无局</option>
+                        <option value="NS">南北有局</option>
+                        <option value="EW">东西有局</option>
+                        <option value="Both">双方有局</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="tricks-made">实际赢墩数 (0-13):</label>
+                    <input type="number" id="tricks-made" min="0" max="13" value="10">
+                </div>
+                
+                <hr>
+
+                <h4>IMP 比较基准</h4>
+                
+                <div class="input-group">
+                    <label for="opponent-score">对手得分 (基准分):</label>
+                    <input type="number" id="opponent-score" value="420">
+                </div>
+
+                <button onclick="calculateFullScore()">计算定约分和 IMP</button>
+                
+                <div class="result-area">
+                    <p id="contract-summary">定约: -</p>
+                    <p id="result-text">总分: <strong>0</strong></p>
+                    
+                    <p id="bonus-text">奖分详情: (定约墩分: 0 | 奖励分: 0)</p>
+                    <hr>
+                    <p id="imp-result">IMP: <strong>0</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="solver" class="content-section">
+            <h2>🔍 双明手求解器</h2>
+            <p>（此功能需连接后端AI服务）</p>
+            <label for="solver-input">输入四手牌例（N-E-S-W，例如：S:AKQJ.H:T98...）:</label>
+            <textarea id="solver-input" rows="5" placeholder="输入牌例"></textarea>
+            
+            <button onclick="solveDoubleDummy()">获取最佳打法和定约</button>
+            <div id="solver-result" class="result-area"></div>
+            
+        </div>
+        
+        <div id="bidding" class="content-section">
+            <h2>💬 叫牌提示（二盖一体系）</h2>
+            <p>（此功能需连接后端AI服务）</p>
+            <div id="bidding-history-display">当前叫牌历史: </div>
+            <input type="text" id="next-bid-input" placeholder="输入下一叫品 (如1S, 2NT, P)">
+            <button onclick="submitBid()">提交叫品并获取建议</button>
+            <div id="bidding-suggestion" class="result-area"></div>
+        </div>
+        
+        <div id="ocr" class="content-section">
+            <h2>📸 牌例 OCR 识别</h2>
+            <p>（此功能需连接后端OCR服务）</p>
+            <input type="file" id="ocr-upload" accept="image/*">
+            <button onclick="uploadForOCR()">上传并识别</button>
+            <div id="ocr-result" class="result-area">识别出的牌例: </div>
+        </div>
+
+        <div id="login" class="content-section">
+            <h2>👤 用户认证</h2>
+            <div id="login-form">
+                <input type="text" id="login-username" placeholder="用户名">
+                <input type="password" id="login-password" placeholder="密码">
+                <button onclick="handleLogin()">登录</button>
+                <button onclick="handleRegister()">注册</button>
+            </div>
+        </div>
+
+        <div id="admin" class="content-section admin-only">
+            <h2>🔑 管理员面板</h2>
+            <p>（此功能仅对管理员可见，用于管理用户和录入比赛结果）</p>
+            
+            <h3>1. 录入比赛结果 (双人赛模式)</h3>
+                <div class="score-input-section">
+                        <h3>1. 提交比赛结果</h3>
+                        
+                        <label for="challenger-username">挑战者 (Challenger):</label>
+                        <input type="text" id="challenger-username" placeholder="挑战者用户名">
+                        
+                        <label for="opponent-username">被挑战者 (Opponent):</label>
+                        <input type="text" id="opponent-username" placeholder="被挑战者用户名">
+                        
+                        <label for="match-result">比赛结果 (以挑战者视角计算):</label>
+                        <select id="match-result">
+                            <option value="1">挑战者 胜 (Win)</option>
+                            <option value="0.5">平局 (Tie)</option>
+                            <option value="0">挑战者 负 (Loss)</option>
+                        </select>
+                        
+                        <button onclick="submitMatchResult()">提交结果并更新积分</button>
+                        <p id="admin-result-message" style="margin-top: 10px; font-weight: bold;"></p>
+                    </div>
+            
+            <hr>
+            
+            <h3>2. 历史记录和回滚</h3>
+            <p>注意：点击删除按钮会回滚积分！</p>
+            <div id="admin-records-list">
+                <p>正在加载历史记录...</p>
+            </div>
+        </div>
+
+
+        <div id="admin-audit" class="content-section admin-only">
+            <h2>⏳ 待审核成绩列表</h2>
+            <p>以下是用户提交的成绩，通过后将自动计算积分并更新排行榜。</p>
+            <table id="admin-audit-table">
+                <thead>
+                    <tr>
+                        <th>提交者</th>
+                        <th>详情</th>
+                        <th>提交时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-audit-body">
+                    </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
