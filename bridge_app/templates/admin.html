@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>👮 管理员后台 - 比赛记录</h3>
+<table class="table table-bordered bg-white">
+    <thead>
+        <tr>
+            <th>时间</th>
+            <th>赢家</th>
+            <th>输家</th>
+            <th>积分变动</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for match in matches %}
+        <tr>
+            <td>{{ match.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
+            <td>{{ User.query.get(match.winner_id).username }}</td>
+            <td>{{ User.query.get(match.loser_id).username }}</td>
+            <td>{{ match.rating_change }}</td>
+            <td>
+                <a href="/delete_match/{{ match.id }}" class="btn btn-sm btn-danger" onclick="return confirm('确定删除并回滚分数吗？')">删除</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

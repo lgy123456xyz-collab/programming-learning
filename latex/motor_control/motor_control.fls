@@ -1,8 +1,8 @@
-PWD e:/programming_works/latex
+PWD e:/programming_works/programming-learning/latex/motor_control
 INPUT f:/bigsoft/texlive/texlive/2025/texmf.cnf
 INPUT f:/bigsoft/texlive/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT f:/bigsoft/texlive/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT e:/programming_works/latex/motor_control.tex
+INPUT e:/programming_works/programming-learning/latex/motor_control/motor_control.tex
 OUTPUT motor_control.log
 INPUT f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls
 INPUT f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls

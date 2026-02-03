@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.17)  8 OCT 2025 10:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.17)  31 DEC 2025 19:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**e:/programming_works/latex/motor_control.tex
-(e:/programming_works/latex/motor_control.tex
+**e:/programming_works/programming-learning/latex/motor_control/motor_control.tex
+(e:/programming_works/programming-learning/latex/motor_control/motor_control.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls (f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
@@ -470,7 +470,7 @@ File: motor_speed0.01.jpg Graphic file (type jpg)
 Package pdftex.def Info: motor_speed0.01.jpg  used on input line 45.
 (pdftex.def)             Requested size: 227.62206pt x 113.80931pt.
 
-e:/programming_works/latex/motor_control.tex:45: Missing $ inserted.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:45: Missing $ inserted.
 <inserted text> 
                 $
 l.45 ...{motor_speed0.01.jpg}\caption{\alpha=0.01}
@@ -478,7 +478,7 @@ l.45 ...{motor_speed0.01.jpg}\caption{\alpha=0.01}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-e:/programming_works/latex/motor_control.tex:45: Missing $ inserted.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:45: Missing $ inserted.
 <inserted text> 
                 $
 l.45 ...{motor_speed0.01.jpg}\caption{\alpha=0.01}
@@ -491,7 +491,7 @@ File: motor_speed0.03.jpg Graphic file (type jpg)
 <use motor_speed0.03.jpg>
 Package pdftex.def Info: motor_speed0.03.jpg  used on input line 46.
 (pdftex.def)             Requested size: 227.62206pt x 113.80931pt.
-e:/programming_works/latex/motor_control.tex:46: Missing $ inserted.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:46: Missing $ inserted.
 <inserted text> 
                 $
 l.46 ...{motor_speed0.03.jpg}\caption{\alpha=0.03}
@@ -499,7 +499,7 @@ l.46 ...{motor_speed0.03.jpg}\caption{\alpha=0.03}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-e:/programming_works/latex/motor_control.tex:46: Missing $ inserted.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:46: Missing $ inserted.
 <inserted text> 
                 $
 l.46 ...{motor_speed0.03.jpg}\caption{\alpha=0.03}
@@ -508,7 +508,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-e:/programming_works/latex/motor_control.tex:46: LaTeX Error: There's no line here to end.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:46: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -525,7 +525,7 @@ File: motor_speed0.05.jpg Graphic file (type jpg)
 <use motor_speed0.05.jpg>
 Package pdftex.def Info: motor_speed0.05.jpg  used on input line 47.
 (pdftex.def)             Requested size: 227.62206pt x 113.80931pt.
-e:/programming_works/latex/motor_control.tex:47: Missing $ inserted.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:47: Missing $ inserted.
 <inserted text> 
                 $
 l.47 ...{motor_speed0.05.jpg}\caption{\alpha=0.05}
@@ -533,7 +533,7 @@ l.47 ...{motor_speed0.05.jpg}\caption{\alpha=0.05}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-e:/programming_works/latex/motor_control.tex:47: Missing $ inserted.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:47: Missing $ inserted.
 <inserted text> 
                 $
 l.47 ...{motor_speed0.05.jpg}\caption{\alpha=0.05}
@@ -546,7 +546,7 @@ File: motor_speed0.1.jpg Graphic file (type jpg)
 <use motor_speed0.1.jpg>
 Package pdftex.def Info: motor_speed0.1.jpg  used on input line 48.
 (pdftex.def)             Requested size: 227.62206pt x 113.80931pt.
-e:/programming_works/latex/motor_control.tex:48: Missing $ inserted.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:48: Missing $ inserted.
 <inserted text> 
                 $
 l.48 ...h]{motor_speed0.1.jpg}\caption{\alpha=0.1}
@@ -554,7 +554,7 @@ l.48 ...h]{motor_speed0.1.jpg}\caption{\alpha=0.1}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-e:/programming_works/latex/motor_control.tex:48: Missing $ inserted.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:48: Missing $ inserted.
 <inserted text> 
                 $
 l.48 ...h]{motor_speed0.1.jpg}\caption{\alpha=0.1}
@@ -563,7 +563,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-e:/programming_works/latex/motor_control.tex:48: LaTeX Error: There's no line here to end.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:48: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -580,7 +580,7 @@ File: motor_speed0.2.jpg Graphic file (type jpg)
 <use motor_speed0.2.jpg>
 Package pdftex.def Info: motor_speed0.2.jpg  used on input line 49.
 (pdftex.def)             Requested size: 227.62206pt x 113.80931pt.
-e:/programming_works/latex/motor_control.tex:49: Missing $ inserted.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:49: Missing $ inserted.
 <inserted text> 
                 $
 l.49 ...h]{motor_speed0.2.jpg}\caption{\alpha=0.2}
@@ -588,7 +588,7 @@ l.49 ...h]{motor_speed0.2.jpg}\caption{\alpha=0.2}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-e:/programming_works/latex/motor_control.tex:49: Missing $ inserted.
+e:/programming_works/programming-learning/latex/motor_control/motor_control.tex:49: Missing $ inserted.
 <inserted text> 
                 $
 l.49 ...h]{motor_speed0.2.jpg}\caption{\alpha=0.2}
@@ -621,14 +621,14 @@ LaTeX Font Warning: Size substitutions with differences
  ) 
 Here is how much of TeX's memory you used:
  7403 strings out of 473190
- 142843 string characters out of 5711643
+ 142948 string characters out of 5711643
  543948 words of memory out of 5000000
  30409 multiletter control sequences out of 15000+600000
  587504 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,6n,83p,748b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,6n,83p,783b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><f:/bigsoft/texlive/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><f:/bigsoft/texlive/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><f:/bigsoft/texlive/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><f:/bigsoft/texlive/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on motor_control.pdf (4 pages, 1559819 bytes).
+Output written on motor_control.pdf (4 pages, 1560027 bytes).
 PDF statistics:
  387 PDF objects out of 1000 (max. 8388607)
  227 compressed objects within 3 object streams

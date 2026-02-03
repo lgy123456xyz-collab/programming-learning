@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1759889812.28262 "e:/programming_works/latex/motor_control.tex" "motor_control.pdf" "motor_control" 1759889814.82903 2
+["pdflatex"] 1767181330.9224 "e:/programming_works/programming-learning/latex/motor_control/motor_control.tex" "motor_control.pdf" "motor_control" 1767181332.49628 2
   "c:/Windows/Fonts/msyh.ttc" 1733017588 19704352 1e10e74402e59d54499af795caf0b135 ""
   "c:/Windows/Fonts/simsun.ttc" 1733017588 18070492 992f2bdc407dde6953c5ed83ceac9a91 ""
-  "e:/programming_works/latex/motor_control.tex" 1759552553 5103 0e77d528089b622ef9993ad2d38c197c ""
+  "e:/programming_works/programming-learning/latex/motor_control/motor_control.tex" 1767176497 5103 0e77d528089b622ef9993ad2d38c197c ""
   "f:/bigsoft/texlive/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1758088022 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "f:/bigsoft/texlive/texlive/2025/texmf-dist/fonts/sfd/ttf2pk/UGBK.sfd" 1758095927 182544 bcd31d5d273400b38612a969fcab55f9 ""
   "f:/bigsoft/texlive/texlive/2025/texmf-dist/fonts/sfd/ttf2pk/Unicode.sfd" 1758095927 103212 c249c63d38b8b55408aee52d643b0c18 ""
@@ -153,8 +153,8 @@
   "f:/bigsoft/texlive/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1758096365 3346216 aa237cc4755d01fe89b37877246eb9e6 ""
   "f:/bigsoft/texlive/texlive/2025/texmf.cnf" 1758096195 713 e69b156964470283e0530f5060668171 ""
   "motor.png" 1759548166 162668 a189a30612ecbbd92dec9a76eca91bec ""
-  "motor_control.aux" 1759889814 605 b3e7ca9c360981bc1acbff8a659992a7 "pdflatex"
-  "motor_control.tex" 1759552553 5103 0e77d528089b622ef9993ad2d38c197c ""
+  "motor_control.aux" 1767181331 605 b3e7ca9c360981bc1acbff8a659992a7 "pdflatex"
+  "motor_control.tex" 1767176497 5103 0e77d528089b622ef9993ad2d38c197c ""
   "motor_speed0.01.jpg" 1759546908 199794 f2a3f1aae0319211e340c803f21881b6 ""
   "motor_speed0.03.jpg" 1759546829 217909 86a739bd44c3ccd0ac6e4c673e428f9b ""
   "motor_speed0.05.jpg" 1759546846 195009 d8ad92869f7b01a0f5d20ae21d2f5fd1 ""

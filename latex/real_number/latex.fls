@@ -1,8 +1,8 @@
-PWD e:/programming_works/latex/real_number
+PWD e:/programming_works/programming-learning/latex/real_number
 INPUT f:/bigsoft/texlive/texlive/2025/texmf.cnf
 INPUT f:/bigsoft/texlive/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT f:/bigsoft/texlive/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT e:/programming_works/latex/real_number/latex.tex
+INPUT e:/programming_works/programming-learning/latex/real_number/latex.tex
 OUTPUT latex.log
 INPUT f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls
 INPUT f:/bigsoft/texlive/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls

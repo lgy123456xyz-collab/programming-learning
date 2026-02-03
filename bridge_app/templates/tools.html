@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow h-100">
+            <div class="card-header bg-info text-white">IMP 计算器</div>
+            <div class="card-body">
+                <form method="POST">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">我方得分</span>
+                        <input type="number" name="score1" class="form-control" placeholder="例如: 420">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">另一桌得分</span>
+                        <input type="number" name="score2" class="form-control" placeholder="例如: -50">
+                    </div>
+                    <button type="submit" name="calc_imp" class="btn btn-primary">计算 IMP</button>
+                </form>
+                {% if imp_result %}
+                    <div class="alert alert-success mt-3">{{ imp_result }}</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow h-100">
+            <div class="card-header bg-warning text-dark">得分计算器 (基础)</div>
+            <div class="card-body">
+                <p>输入定约结果计算标准分（Duplicate）</p>
+                <form method="POST">
+                    <button type="submit" name="calc_score" class="btn btn-outline-dark">计算得分 (演示)</button>
+                </form>
+                 {% if score_result %}
+                    <div class="alert alert-warning mt-3">{{ score_result }}</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
