@@ -12,5 +12,7 @@ int main(){
             scanf("%s",dna[i]);
         }
 
+        
+
     }
 }
