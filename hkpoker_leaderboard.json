@@ -1,0 +1,16 @@
+[
+  {
+    "name": "老K",
+    "chips": 3000,
+    "rounds": 8,
+    "difficulty": "大师",
+    "date": "2026-03-05 21:20"
+  },
+  {
+    "name": "玩家",
+    "chips": 0,
+    "rounds": 4,
+    "difficulty": "普通",
+    "date": "2026-03-07 19:10"
+  }
+]
