@@ -29,3 +29,67 @@ AACAAAGCAA
 AAGTTACCTT
 AAGTTACCAA
 TACTTACCAA
+
+
+sequence subsequence
+person compression
+VERDI vivaVittorioEmanueleReDiItalia
+caseDoesMatter CaseDoesMatter
+
+1345 2584
+2584 683
+2584 1345
+683 1345
+683 1345
+2584 683
+
+1234 4567
+1234 4567
+4567 4321
+4322 4567
+4321 1234
+4321 1234
+
+
+2.3
+void Insertx(sqList &L, ElemType x){
+    len=ListLength(L);
+    for(int i=0;i<=len;i++){
+        if(x<L.elem[i]){
+            ListInsert(&L,i,x);
+            break;
+        }else if(L.elem[i]=='\0'){
+            ListInsert(&L,i+1,x);
+        } 
+    }
+}
+
+2.5
+
+void Reverse(sqList &L){
+    if(L.length<=1) return;
+    for(int i=0;i<L.length/2;i++){
+        L.elem[i]<->L.elem[length-1-i];
+    }
+}
+
+2.6
+void ReverseLinkList(LinkList &L){
+    
+    LinkList p=L->next;
+    if(p->next==NULL) return;
+    LinkList q=L->next->next; //结构体初始化的时候链表类型就是一个指针 
+    p->next=NULL;
+    while(q->next!=NULL){
+        L->next=q;
+        q=q->next;
+        L->next->next=p;
+        p=L->next;
+
+    }
+    L->next=q;
+    q->next=p;
+    
+
+}
+

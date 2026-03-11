@@ -27,9 +27,9 @@ CMakeLists.txt
 # 1. 忽略 Python/biology 文件夹下的所有内容
 Python/biology/*
 
-# 2. 允许该文件夹下的所有子文件夹被检索（否则无法找到深层的 .py）
-!Python/biology/**/
+# # 2. 允许该文件夹下的所有子文件夹被检索（否则无法找到深层的 .py）
+# !Python/biology/**/
 
-# 3. 重新包含（不忽略）该目录下所有的 .py 文件
+# # 3. 重新包含（不忽略）该目录下所有的 .py 文件
 !Python/biology/**/*.py
 !Python/biology/*.py
