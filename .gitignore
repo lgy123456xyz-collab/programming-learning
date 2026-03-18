@@ -33,3 +33,6 @@ Python/biology/*
 # # 3. 重新包含（不忽略）该目录下所有的 .py 文件
 !Python/biology/**/*.py
 !Python/biology/*.py
+
+bridgeProject/大作业4.3/bidding_db.txt
+
