@@ -128,3 +128,49 @@ void Exchange_Sq(SqList<int> &L){
         }
     }
 }
+
+
+//3.7
+bool matchToString(char str[]){
+    SqStack<char> S;    //为了让char不报错,这里用了一下cpp模板
+    InitStack_Sq(S);
+    int flag=1;
+    char *p=str;
+    char e;
+    while(*p&&flag){
+        switch(*p){
+            case '(':
+            case '[':
+            case '{':
+                Push_Sq(S,*p);
+                break;
+            case ')':
+                if(Pop_Sq(S,e)||e!='('){
+                    flag=0;
+                }
+                break;
+            case ']':
+                if(Pop_Sq(S,e)||e!='['){
+                    flag=0;
+                }
+                break;
+            case '}':
+                if(Pop_Sq(S,e)||e!='{'){
+                    flag=0;
+                }
+                break;  
+            default:
+                break;
+        }
+        p++;
+        if(flag==1&&StackEmpty_Sq(S)){
+            return 1;
+        }
+        else 
+            return 0;
+    }
+    
+}
+
+//设表达式由单字母变量、双目运算符和圆括号组成（如:“(a*(b+c)-d)/e）”。
+//试写一个算法，将一个书写正确的表达式转换为逆波兰式。
