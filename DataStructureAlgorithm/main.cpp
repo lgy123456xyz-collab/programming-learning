@@ -1,7 +1,10 @@
 #include "Realize.h"
 
+
 int main(){
-    yanghui(5);
+    int n;
+    std::cin >> n;
+    yanghui(n);
     return 0;
 
 }
