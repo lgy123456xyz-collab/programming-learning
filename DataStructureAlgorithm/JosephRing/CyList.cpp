@@ -2,13 +2,13 @@
 #include"CyList.h"
 #include<iostream>
 
-bool InitCyList(CyList &L){
+void InitCyList(CyList &L){
     L->next=L;
     L->position=0;
     L->password=0;
 
 }
-bool InsertCyList(CyList &L,LNode*Now,int position,int password){
+void InsertCyList(CyList &L,LNode*&Now,int position,int password){
     Now->next=new LNode;
     Now=Now->next;
     Now->position=position;
@@ -19,8 +19,12 @@ bool isCyListEmpty(CyList L){
     if(L->next==L)return 1;
     else return 0;
 }
-int DeleteCyList(CyList &L,LNode* Now,int position){
-    LNode*p=Now;
+int DeleteCyList(CyList &L,LNode* &Now,int &position){
+    LNode*p=Now->next;
+    if(p==L){
+        p=p->next;
+        Now=L;
+    }
     position=Now->next->position;
     Now->next=Now->next->next;
     int e= p->password;
